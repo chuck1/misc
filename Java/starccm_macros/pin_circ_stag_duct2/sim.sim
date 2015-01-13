@@ -1,0 +1,397 @@
+{'ClassName': 'STAR', 'StatePosition': 78L, 'Version': 2}
+                   
+{'BuildArch': 'linux-x86_64-2.3.4', 'BuildEnv': 'gnu4.6', 'ClassName': 'StarVersion', 'MachineConfig': 'Serial', 'ReleaseDate': 'Fri May 25 16:02:30 UTC 2012', 'ReleaseNumber': '7.04.006'}
+{'ClassName': 'DynamicLoader', 'loadedLibraries': ['StarNeo', 'StarCommon', 'FieldFunctions', 'StarTools', 'StarMesh', 'StarDataSource', 'StarImport', 'StarReport', 'StarSolve', 'StarPartition', 'UserFunctions', 'StarPost', 'StarScene']}
+{'ClassName': 'star.common.Simulation', 'ManagerManager': 3L, 'NameManager': 4L, 'Parent': 2L, 'TaskManager': 0L, 'isModified': true, 'isReadOnly': false, 'name': '', 'parallel': false, 'path': ''}
+{'ClassName': 'star.common.ManagerManager', 'Keys': [5L, 6L, 7L, 8L, 9L, 10L, 11L, 12L, 13L, 14L, 15L, 16L, 17L, 18L, 19L, 20L, 21L, 22L, 23L, 24L, 25L, 26L, 27L, 28L, 29L, 30L, 31L, 32L, 33L, 34L, 35L, 36L, 37L, 38L, 39L, 40L, 41L, 42L, 43L, 44L, 45L, 46L, 47L], 'NameManager': 48L, 'Parent': 2L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.Solution', 'Parent': 2L, 'PhysicalTime': 0.0000000000000000000}
+{'ClassName': 'star.common.InterfaceManager', 'ClientServerObjectGroupManager': 49L, 'Keys': [], 'NameManager': 50L, 'Parent': 2L, 'Verbosity': false}
+{'ClassName': 'star.common.SimulationPartManager', 'Keys': [], 'NameManager': 52L, 'NextPartIndex': 1, 'NextPartSurfaceIndex': 1, 'Parent': 2L, 'PartContactManager': 51L}
+{'ClassName': 'star.cadmodeler.SolidModelManager', 'Keys': [], 'NameManager': 53L, 'Parent': 2L}
+{'ClassName': 'star.common.RepresentationManager', 'Keys': [], 'NameManager': 54L, 'Parent': 2L}
+{'ClassName': 'star.common.UnitsManager', 'ClientServerObjectGroupManager': 55L, 'Keys': [57L, 58L, 59L, 60L, 61L, 62L, 63L, 64L, 65L, 66L, 67L, 68L, 69L, 70L, 71L, 72L, 73L, 74L, 75L, 76L, 77L, 78L, 79L, 80L, 81L, 82L, 83L, 84L, 85L, 86L, 87L, 88L, 89L, 90L, 91L, 92L, 93L, 94L, 95L, 96L, 97L, 98L, 99L, 100L, 101L, 102L, 103L, 104L, 105L, 106L, 107L, 108L, 109L, 110L, 111L, 112L, 113L, 114L, 115L, 116L, 117L, 118L, 119L, 120L, 121L, 122L, 123L, 124L, 125L, 126L, 127L, 128L, 129L, 130L, 131L, 132L, 133L, 134L, 135L, 136L, 137L, 138L, 139L, 140L, 141L, 142L, 143L], 'NameManager': 144L, 'NoUnits': 57L, 'Parent': 2L, 'SystemOption': 56L}
+{'ClassName': 'star.common.StarLog', 'Log': '\n----------------------------------------\nWed Feb 27 13:37:54 2013\n\nSimulation created by STAR-CCM+ 7.04.006\n\n----------------------------------------\nWed Feb 27 13:38:07 2013\n\nSaved simulation as sim.sim\n  STAR-CCM+ 7.04.006 (linux-x86_64-2.3.4/gnu4.6) Serial\n  Tag date = Fri May 25 16:02:30 UTC 2012\n', 'NonRecoverableError': false, 'Parent': 2L, 'SavedAfterError': false, 'SavedByDevBuild': false}
+{'ClassName': 'star.common.RegionManager', 'ClientServerObjectGroupManager': 145L, 'Keys': [], 'NameManager': 146L, 'Parent': 2L}
+{'ClassName': 'star.common.ConditionTypeManager', 'Keys': [147L, 148L, 149L, 150L, 151L, 152L, 153L, 154L, 155L, 156L, 157L, 158L, 159L, 160L, 161L, 162L, 163L, 164L, 165L, 166L, 167L, 168L, 169L, 170L, 171L, 172L, 173L, 174L, 175L, 176L, 177L, 178L, 179L, 180L], 'NameManager': 181L, 'Parent': 2L}
+{'ClassName': 'star.vis.DataSetManager', 'Keys': [], 'NameManager': 182L, 'Parent': 2L}
+{'ClassName': 'star.common.PlotManager', 'ClientServerObjectGroupManager': 183L, 'Keys': [], 'NameManager': 184L, 'Parent': 2L, 'Verbose': false}
+{'ClassName': 'star.common.ContinuumManager', 'Keys': [], 'NameManager': 185L, 'Parent': 2L}
+{'ClassName': 'star.common.NewImportManager', 'Keys': [], 'NameManager': 186L, 'Parent': 2L}
+{'ClassName': 'star.common.TableManager', 'Keys': [], 'NameManager': 187L, 'Parent': 2L}
+{'ClassName': 'star.common.GeometryFilterManager', 'Keys': [], 'NameManager': 188L, 'Parent': 2L}
+{'ClassName': 'star.common.LicenseReservationManager', 'Keys': [189L], 'NameManager': 190L, 'Parent': 2L}
+{'ClassName': 'star.common.CoordinateSystemManager', 'Keys': [191L], 'LabCoordinateSystem': 191L, 'NameManager': 192L, 'Parent': 2L}
+{'ClassName': 'star.common.TagManager', 'Keys': [], 'NameManager': 193L, 'Parent': 2L}
+{'ClassName': 'SerializableTimeStamper', 'Parent': 2L, 'TimeStamp': 1L}
+{'ClassName': 'star.common.ImportedModelManager', 'Keys': [], 'NameManager': 194L, 'Parent': 2L}
+{'ClassName': 'star.common.FieldFunctionManager', 'Keys': [], 'NameManager': 196L, 'NullFunction': 195L, 'Parent': 2L, 'PresenterManager': 0L}
+{'ClassName': 'star.common.VolumeShapeManager', 'Keys': [], 'NameManager': 197L, 'Parent': 2L}
+{'ClassName': 'star.common.MeshManager', 'NameManager': 4L, 'Parent': 2L, 'PresentationName': 'star.common.MeshManager', 'Simulation': 2L}
+{'ClassName': 'VisPartManager', 'Keys': [], 'NameManager': 198L, 'Parent': 2L}
+{'ClassName': 'star.common.PartManager', 'ClientServerObjectGroupManager': 199L, 'Keys': [], 'NameManager': 200L, 'Parent': 2L}
+{'ClassName': 'star.common.ImportManager', 'ExportBoundaries': 204L, 'ExportOptionAppendToFile': false, 'ExportOptionSolutionOnly': false, 'ExportParts': 203L, 'ExportPath': '', 'ExportRegions': 205L, 'ExportScalars': 201L, 'ExportVectors': 202L, 'ImportedFunctions': [], 'ImportedLabels': [], 'ImportedUnits': [], 'NameManager': 4L, 'Parent': 2L, 'PresentationName': 'star.common.ImportManager', 'Simulation': 2L}
+{'AnalysisVariableNameManager': 210L, 'ClassName': 'star.base.report.MonitorManager', 'ClientServerObjectGroupManager': 206L, 'HeadingPrintFrequency': 10, 'Keys': [], 'NameManager': 208L, 'Parent': 2L, 'PrintDirectionOption': 207L, 'PrintedMonitors': 209L}
+{'ClassName': 'star.base.report.DataSetFunctionManager', 'Keys': [], 'NameManager': 212L, 'NullFunction': 211L, 'Parent': 2L}
+{'ClassName': 'star.base.report.DerivedDataManager', 'DerivedDataNameManager': 215L, 'Keys': [], 'NameManager': 214L, 'NullDerivedData': 213L, 'Parent': 2L}
+{'ClassName': 'star.base.report.ReportManager', 'ClientServerObjectGroupManager': 216L, 'Keys': [], 'NameManager': 217L, 'Parent': 2L}
+{'ClassName': 'star.common.SolverStoppingCriterionManager', 'Keys': [], 'NameManager': 218L, 'Parent': 2L}
+{'ClassName': 'star.common.SolverManager', 'Keys': [219L], 'NameManager': 220L, 'Parent': 2L, 'ResidualPlot': 0L}
+{'AutoExport': 222L, 'AutoSave': 221L, 'ClassName': 'star.common.SimulationIterator', 'CpuTime': 0.0000000000000000000, 'CurrentIteration': 0, 'CurrentTimeLevel': 0, 'ElapsedTime': 0.0000000000000000000, 'IterationCpuTime': 0.0000000000000000000, 'IterationElapsedTime': 0.0000000000000000000, 'NameManager': 4L, 'NumberOfSteps': 1, 'Parent': 2L, 'PresentationName': 'star.common.SimulationIterator', 'Simulation': 2L, 'TimeStepCpuTime': 0.0000000000000000000, 'TimeStepElapsedTime': 0.0000000000000000000, 'Verbosity': 0}
+{'ClassName': 'star.common.PartitionConfigManager', 'ElapsedTimes': {}, 'NumberOfCurrentPartitions': 1, 'NumberOfRestoredPartitions': 0, 'Parent': 2L, 'Simulation': 2L}
+{'ClassName': 'star.common.UserFunctionManager', 'Keys': [], 'NameManager': 224L, 'NullLibrary': 223L, 'Parent': 2L}
+{'ClassName': 'star.post.SolutionViewManager', 'CurrentSolutionView': 225L, 'Keys': [225L], 'NameManager': 226L, 'Parent': 2L}
+{'ClassName': 'star.post.SolutionHistoryManager', 'Keys': [], 'NameManager': 227L, 'Parent': 2L}
+{'ClassName': 'star.common.TransformManager', 'DefaultTransform': 228L, 'Keys': [228L], 'NameManager': 229L, 'Parent': 2L}
+{'ClassName': 'star.vis.LookupTableManager', 'Keys': [230L, 231L, 232L, 233L, 234L], 'NameManager': 235L, 'Parent': 2L}
+{'ClassName': 'star.vis.SceneManager', 'ClientServerObjectGroupManager': 236L, 'CoordinateSystem': 191L, 'Keys': [], 'NameManager': 237L, 'Parent': 2L, 'Verbose': false}
+{'ClassName': 'star.vis.ViewManager', 'Keys': [], 'NameManager': 238L, 'Parent': 2L}
+{'ClassName': 'star.coremodule.ui.layout.LayoutManager', 'DefaultLayout': 239L, 'Keys': [239L], 'NameManager': 240L, 'Parent': 2L}
+{'ClassName': 'star.vis.AnnotationManager', 'Keys': [241L, 242L, 243L, 244L, 245L], 'NameManager': 246L, 'Parent': 2L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 247L, 'Parent': 6L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.PartContactManager', 'Keys': [], 'NameManager': 248L, 'Parent': 7L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 249L, 'Parent': 10L}
+{'ClassName': 'star.common.UnitsManagerSystemOption', 'Parent': 10L, 'Selected': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Dimensionless', 'Dimensions': 250L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': '', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'kilogram', 'Dimensions': 251L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'kg', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 0.45359237000000002249, 'Description': 'pound', 'Dimensions': 252L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'lb', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'meter', 'Dimensions': 253L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'm', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 0.30480000000000001537, 'Description': 'foot', 'Dimensions': 254L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'ft', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'second', 'Dimensions': 255L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 's', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Rate', 'Dimensions': 256L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': '/s', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Hertz', 'Dimensions': 257L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'Hz', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'radians per meter', 'Dimensions': 258L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'rad/m', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Kelvin', 'Dimensions': 259L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'K', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 0.55555555555555558023, 'Description': 'Rankine', 'Dimensions': 260L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'R', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'ampere', 'Dimensions': 261L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'A', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'candela', 'Dimensions': 262L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'cd', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0200000000000000178, 'Description': 'candle', 'Dimensions': 263L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'candle', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'kilogram-mole', 'Dimensions': 264L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'kmol', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 0.45359237000000002249, 'Description': 'pound-mole', 'Dimensions': 265L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'lbmol', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'radian', 'Dimensions': 266L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'radian', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'steradian', 'Dimensions': 267L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'steradian', 'System': 3}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Temperature difference K', 'Dimensions': 268L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'delta K', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 0.55555555555555558023, 'Description': 'Temperature difference R', 'Dimensions': 269L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'delta R', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Newton', 'Dimensions': 270L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'N', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 4.4482216152604996395, 'Description': 'pound-force', 'Dimensions': 271L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'lbf', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Joule', 'Dimensions': 272L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'J', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'watt', 'Dimensions': 273L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'W', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Pascal', 'Dimensions': 274L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'Pa', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 101325.00000000000000, 'Description': 'atmosphere', 'Dimensions': 275L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'atm', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Newton-meter', 'Dimensions': 276L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'N-m', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.3558179483314003466, 'Description': 'pound force-foot', 'Dimensions': 277L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'lbf-ft', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1000000.0000000000000, 'Description': 'megapascal', 'Dimensions': 278L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'MPa', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 6894757.2931683612987, 'Description': 'kilopounds per square inch', 'Dimensions': 279L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'ksi', 'System': 2}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'coulomb', 'Dimensions': 280L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'coulomb', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'volt', 'Dimensions': 281L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'V', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'siemens', 'Dimensions': 282L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'S', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'ohm', 'Dimensions': 283L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'ohm', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 60.000000000000000000, 'Description': 'minute', 'Dimensions': 284L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'min', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 3600.0000000000000000, 'Description': 'hour', 'Dimensions': 285L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'hr', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 907.18474000000003343, 'Description': 'short ton', 'Dimensions': 286L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'ton', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.010000000000000000208, 'Description': 'centimeter', 'Dimensions': 287L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'cm', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.0010000000000000000208, 'Description': 'millimeter', 'Dimensions': 288L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'mm', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 9.9999999999999995475e-07, 'Description': 'micrometer', 'Dimensions': 289L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'um', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.025399999999999998967, 'Description': 'inch', 'Dimensions': 290L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'in', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.91439999999999999059, 'Description': 'yard', 'Dimensions': 291L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'yd', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1609.3440000000000509, 'Description': 'mile', 'Dimensions': 292L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'mi', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1000.0000000000000000, 'Description': 'kilometer', 'Dimensions': 293L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'km', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Celsius', 'Dimensions': 294L, 'NameManager': 144L, 'Offset': 273.14999999999997726, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'C', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.55555555555555558023, 'Description': 'Fahrenheit', 'Dimensions': 295L, 'NameManager': 144L, 'Offset': 459.67000000000001592, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'F', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.017453292519943298944, 'Description': 'degree', 'Dimensions': 296L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'deg', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 6.2831853071795862320, 'Description': 'revolution', 'Dimensions': 297L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'rev', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1055.0558526199999960, 'Description': 'British thermal units', 'Dimensions': 298L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'btu', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 745.69987158227024793, 'Description': 'horsepower', 'Dimensions': 299L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'hp', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 17.584264210333333978, 'Description': 'btu per minute', 'Dimensions': 300L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'btu/min', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1000.0000000000000000, 'Description': 'kilowatts', 'Dimensions': 301L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'kW', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 100000.00000000000000, 'Description': 'bar', 'Dimensions': 302L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'bar', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1000000000.0000000000, 'Description': 'gigapascal', 'Dimensions': 303L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'GPa', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 6894.7572931683607749, 'Description': 'pounds per square inch', 'Dimensions': 304L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'psi', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 6894757293.1683607101, 'Description': 'megapounds per square inch', 'Dimensions': 305L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'msi', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 47.880258980335803187, 'Description': 'pounds per square foot', 'Dimensions': 306L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'psf', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 27679.904710203099967, 'Description': 'pounds per cubic inch', 'Dimensions': 307L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'lb/in^3', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.27777777777777779011, 'Description': 'kilometers per hour', 'Dimensions': 308L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'kph', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.44703999999999999293, 'Description': 'miles per hour', 'Dimensions': 309L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'mph', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.10471975511965979366, 'Description': 'revolutions per minute', 'Dimensions': 310L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'rpm', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 6.2831853071795862320, 'Description': 'revolutions per second', 'Dimensions': 311L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'rps', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.00010000000000000000479, 'Description': 'square centimeter', 'Dimensions': 312L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'cm^2', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 9.9999999999999995475e-07, 'Description': 'square millimeter', 'Dimensions': 313L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'mm^2', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.00064515999999999998262, 'Description': 'square inch', 'Dimensions': 314L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'in^2', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000001665e-06, 'Description': 'cubic centimeter', 'Dimensions': 315L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'cm^3', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000623e-09, 'Description': 'cubic millimeter', 'Dimensions': 316L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'mm^3', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1.6387063999999999201e-05, 'Description': 'cubic inch', 'Dimensions': 317L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'in^3', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.0037854117840000001474, 'Description': 'gallon', 'Dimensions': 318L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'gal', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.00094635294599999992844, 'Description': 'quart', 'Dimensions': 319L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'qt', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.0010000000000000000208, 'Description': 'liter', 'Dimensions': 320L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'l', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 9.9999999999999995475e-07, 'Description': 'milliliter', 'Dimensions': 321L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'ml', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 9.9999999999999995475e-08, 'Description': 'dyne-centimeter', 'Dimensions': 322L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'dyn-cm', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.010000000000000000208, 'Description': 'Newton-centimeter', 'Dimensions': 323L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'N-cm', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.11298482902761669555, 'Description': 'pound force-inch', 'Dimensions': 324L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'lbf-in', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1000000.0000000000000, 'Description': 'W/mm^2-K', 'Dimensions': 325L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'W/mm^2-K', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'siemens/m', 'Dimensions': 326L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'S/m', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'ohm-m', 'Dimensions': 327L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'ohm-m', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'm^2-ohm', 'Dimensions': 328L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'm^2-ohm', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'farad/m', 'Dimensions': 329L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'farad/m', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'henry/m', 'Dimensions': 330L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'H/m', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'newton/coulomb', 'Dimensions': 331L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'N/A-s', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'weber/meter', 'Dimensions': 332L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'Wb/m', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'tesla', 'Dimensions': 333L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'T', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'henry', 'Dimensions': 334L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': true, 'PresentationName': 'H', 'System': 1}
+{'ClassName': 'star.common.Units', 'Conversion': 1.0000000000000000000, 'Description': 'Temperature difference C', 'Dimensions': 335L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'delta C', 'System': 0}
+{'ClassName': 'star.common.Units', 'Conversion': 0.55555555555555558023, 'Description': 'Temperature difference F', 'Dimensions': 336L, 'NameManager': 144L, 'Offset': 0.0000000000000000000, 'Parent': 10L, 'Preferred': false, 'PresentationName': 'delta F', 'System': 0}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 337L, 'Parent': 12L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.AxisBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.BaffleInterface', 'Parent': 13L}
+{'ClassName': 'star.common.BaffleBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.OversetMeshBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.OversetMeshInterface', 'Parent': 13L}
+{'ClassName': 'star.common.ContactBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.ContactInterface', 'Parent': 13L}
+{'ClassName': 'star.common.FluidRegion', 'Parent': 13L}
+{'ClassName': 'star.common.FreeStreamBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.FullyDevelopedBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.FullyDevelopedInterface', 'Parent': 13L}
+{'ClassName': 'star.common.HeatExchangerInterface', 'Parent': 13L}
+{'ClassName': 'star.common.InletBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.InternalBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.InternalInterface', 'Parent': 13L}
+{'ClassName': 'star.common.MassFlowBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.MixingPlaneInflowBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.MixingPlaneOutflowBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.MixingPlaneInterface', 'Parent': 13L}
+{'ClassName': 'star.common.MappedBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.MappedInterface', 'Parent': 13L}
+{'ClassName': 'star.common.OutletBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.PorousBaffleBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.PorousBaffleInterface', 'Parent': 13L}
+{'ClassName': 'star.common.FanBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.FanInterface', 'Parent': 13L}
+{'ClassName': 'star.common.FluidFilmFsBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.FluidFilmFsInterface', 'Parent': 13L}
+{'ClassName': 'star.common.PorousRegion', 'Parent': 13L}
+{'ClassName': 'star.common.PressureBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.SolidRegion', 'Parent': 13L}
+{'ClassName': 'star.common.StagnationBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.SymmetryBoundary', 'Parent': 13L}
+{'ClassName': 'star.common.WallBoundary', 'Parent': 13L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 338L, 'Parent': 15L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.AddonLicenseReservation', 'DOEKey': '', 'JTOpen': false, 'NameManager': 190L, 'Parent': 20L, 'PresentationName': 'AddonLicenseReservation', 'ReleaseLicenses': true, 'RetryLicenses': true, 'Simulation': 2L, 'aero-vibro': false, 'batterysim': false, 'cadexchange': false, 'dars-cfd': false, 'star-cast': false}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.LabCoordinateSystem', 'ComponentNameVector': ['i', 'j', 'k'], 'CoordinateNameVector': ['X', 'Y', 'Z'], 'ManagedCoordinateSystems': 339L, 'NameManager': 192L, 'Parent': 21L, 'PresentationName': 'Laboratory'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ChildManager': 341L, 'ClassName': 'star.common.NullFieldFunction', 'Dimensions': 342L, 'FunctionName': 'NullFieldFunction', 'IgnoreBoundaryValues': false, 'InverseDistanceWeighted': false, 'Manager': 25L, 'Modified': false, 'NameManager': 196L, 'Parent': 25L, 'PresentationName': '<Select Function>', 'TypeOption': 340L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 343L, 'Parent': 29L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'ExportFunctionVector', 'className': 'ExportFunctionVector', 'vector': []}
+{'ClassName': 'ExportFunctionVector', 'className': 'ExportFunctionVector', 'vector': []}
+{'ClassName': 'ExportPartVector', 'className': 'ExportPartVector', 'vector': []}
+{'ClassName': 'ExportBoundaryVector', 'className': 'ExportBoundaryVector', 'vector': []}
+{'ClassName': 'ExportRegionVector', 'className': 'ExportRegionVector', 'vector': []}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 344L, 'Parent': 31L}
+{'ClassName': 'star.base.report.MonitorPrintDirectionOption', 'Parent': 31L, 'Selected': 0}
+{'ClassName': 'NameManager'}
+{'ClassName': 'PrintedMonitors', 'className': 'PrintedMonitors', 'vector': []}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NullDataSetFunction', 'DerivedDerivedDataGroup': 347L, 'ImportedDerivedDataGroup': 348L, 'MonitorDerivedDataGroup': 345L, 'NameManager': 212L, 'Parent': 32L, 'PresentationName': '<Select Function>', 'TableDerivedDataGroup': 346L, 'UpdateFrequency': 1}
+{'ClassName': 'NameManager'}
+{'ActionTimeStamp': -1L, 'ClassName': 'NullDerivedData', 'DataSetFunction': 0L, 'DataTimeStamp': 3L, 'DelayedUpdateRequired': false, 'DerivedDataName': 'DerivedData_1', 'DerivedDataStorage': 349L, 'NameManager': 214L, 'NeedToReconstructMetadata': false, 'Parent': 33L, 'PresentationName': '<Select Data>', 'ReconstructMetadataTrigger': 0, 'Simulation': 2L, 'UpdateActive': true}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 350L, 'Parent': 34L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.vis.VisualizationSolver', 'Domain': 352L, 'Frozen': false, 'LeaveTemporaryStorage': false, 'Models': 353L, 'Parent': 36L, 'Priority': 30000, 'RampCalculatorManager': 351L, 'ReconFreeze': false, 'ReconZero': false, 'Simulation': 2L}
+{'ClassName': 'NameManager'}
+{'AutoSaveBatch': true, 'AutoSaveMesh': false, 'ClassName': 'star.common.AutoSave', 'DeltaTimeUpdateFrequency': 354L, 'Enabled': false, 'FormatWidth': 5, 'IterationUpdateFrequency': 355L, 'LastSaveTime': 0.0000000000000000000, 'LastStepTime': 0.0000000000000000000, 'MaxAutosavedFiles': 0, 'Parent': 37L, 'Path': '', 'Separator': '@', 'TimeStepUpdateFrequency': 356L, 'TriggerOption': 357L}
+{'BaseName': '', 'Boundaries': 366L, 'ClassName': 'star.common.AutoExport', 'DeltaTimeUpdateFrequency': 358L, 'Enabled': false, 'ExportDirectory': '', 'FileExt': 'ccm', 'FormatWidth': 5, 'IterationUpdateFrequency': 359L, 'LastSaveTime': 0.0000000000000000000, 'LastStepTime': 0.0000000000000000000, 'OptionAppendToFile': true, 'OptionForceOverwrite': false, 'OptionSolutionOnly': false, 'Parent': 37L, 'Parts': 367L, 'Regions': 365L, 'Scalars': 363L, 'Separator': '@', 'SolutionExportFormat': 362L, 'TimeStepUpdateFrequency': 360L, 'TriggerOption': 361L, 'Vectors': 364L}
+{'ClassName': 'star.common.UserLibrary', 'Keys': [368L], 'Language': 'Unknown', 'LibraryName': '', 'NameManager': 369L, 'Parent': 39L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.post.CurrentSolutionView', 'Iteration': 0, 'NameManager': 226L, 'Parent': 40L, 'PhysicalTime': 0.0000000000000000000, 'PresentationName': 'Current Solution', 'TimeStep': 0}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.vis.IdentityTransform', 'NameManager': 229L, 'Parent': 42L, 'PresentationName': 'Identity', 'RotationAngle': 0.0000000000000000000, 'RotationAxis': [0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000], 'RotationOrigin': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'Scale': [1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000], 'Translation': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000]}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.vis.BlueRedLookupTable', 'ColorSpace': 1, 'NameManager': 235L, 'Parent': 43L, 'PresentationName': 'blue-red', 'Simulation': 2L, 'Values': [0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000]}
+{'ClassName': 'star.vis.BlackWhiteLookupTable', 'ColorSpace': 0, 'NameManager': 235L, 'Parent': 43L, 'PresentationName': 'grayscale', 'Simulation': 2L, 'Values': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000]}
+{'ClassName': 'star.vis.HighContrastLookupTable', 'ColorSpace': 0, 'NameManager': 235L, 'Parent': 43L, 'PresentationName': 'high-contrast', 'Simulation': 2L, 'Values': [0.20000000000000001110, 0.0000000000000000000, 0.20000000000000001110, 1.0000000000000000000, 0.50000000000000000000, 0.0000000000000000000, 0.50000000000000000000, 1.0000000000000000000, 0.40000000000000002220, 0.0000000000000000000, 0.59999999999999997780, 1.0000000000000000000, 0.29999999999999998890, 0.0000000000000000000, 0.69999999999999995559, 1.0000000000000000000, 0.20000000000000001110, 0.0000000000000000000, 0.80000000000000004441, 1.0000000000000000000, 0.10000000000000000555, 0.0000000000000000000, 0.90000000000000002220, 1.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.63000000000000000444, 0.63000000000000000444, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 0.75000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.10000000000000000555, 0.80000000000000004441, 0.69999999999999995559, 1.0000000000000000000, 0.10000000000000000555, 0.90000000000000002220, 0.0000000000000000000, 1.0000000000000000000, 0.50000000000000000000, 1.0000000000000000000, 0.63000000000000000444, 1.0000000000000000000, 0.75000000000000000000, 1.0000000000000000000, 0.25000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.80000000000000004441, 0.10000000000000000555, 1.0000000000000000000, 1.0000000000000000000, 0.59999999999999997780, 0.29999999999999998890, 1.0000000000000000000, 1.0000000000000000000, 0.67000000000000003997, 0.94999999999999995559, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000]}
+{'ClassName': 'star.vis.SpectrumLookupTable', 'ColorSpace': 0, 'NameManager': 235L, 'Parent': 43L, 'PresentationName': 'spectrum', 'Simulation': 2L, 'Values': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 0.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000]}
+{'ClassName': 'star.vis.CoolWarmLookupTable', 'ColorSpace': 3, 'NameManager': 235L, 'Parent': 43L, 'PresentationName': 'cool-warm', 'Simulation': 2L, 'Values': [0.13725499999999998813, 0.23921600000000001196, 0.70980399999999999050, 1.0000000000000000000, 0.67451000000000005397, 0.14117599999999999594, 0.12548999999999999044, 1.0000000000000000000]}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.neo.ClientServerObjectGroupManager', 'Keys': [], 'NameManager': 370L, 'Parent': 44L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.coremodule.ui.layout.Layout', 'Keys': [], 'LayoutName': 'default', 'NameManager': 371L, 'Parent': 46L, 'Permanent': true}
+{'ClassName': 'NameManager'}
+{'Background': false, 'BackgroundColor': [1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000], 'ClassName': 'star.vis.IterationAnnotation', 'Color': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultCoordinateSystem': 3, 'DefaultHeight': 0.050000000000000002776, 'DefaultInteraction': true, 'DefaultLocation': 1, 'DefaultPosition': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultWidth': 0.050000000000000002776, 'DefaultWidthStretchFactor': 1.0000000000000000000, 'DisplayText': '', 'Dynamic': true, 'FontString': 'Dialog-ITALIC-24', 'NameManager': 246L, 'Opacity': 1.0000000000000000000, 'Parent': 47L, 'PresentationName': 'Iteration', 'Shadow': true, 'ShowPhysicalTime': false, 'ShowTimeStep': false, 'Simulation': 2L, 'Text': ''}
+{'Background': false, 'BackgroundColor': [1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000], 'ClassName': 'star.vis.PhysicalTimeAnnotation', 'Color': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultCoordinateSystem': 3, 'DefaultHeight': 0.050000000000000002776, 'DefaultInteraction': true, 'DefaultLocation': 1, 'DefaultPosition': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultWidth': 0.050000000000000002776, 'DefaultWidthStretchFactor': 1.0000000000000000000, 'DisplayText': '', 'Dynamic': true, 'FontString': 'Dialog-ITALIC-24', 'NameManager': 246L, 'Opacity': 1.0000000000000000000, 'Parent': 47L, 'PresentationName': 'Solution Time', 'Shadow': true, 'Simulation': 2L, 'Text': ''}
+{'Background': false, 'BackgroundColor': [1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000], 'ClassName': 'star.vis.TimeStepAnnotation', 'Color': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultCoordinateSystem': 3, 'DefaultHeight': 0.050000000000000002776, 'DefaultInteraction': true, 'DefaultLocation': 1, 'DefaultPosition': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultWidth': 0.050000000000000002776, 'DefaultWidthStretchFactor': 1.0000000000000000000, 'DisplayText': '', 'Dynamic': true, 'FontString': 'Dialog-ITALIC-24', 'NameManager': 246L, 'Opacity': 1.0000000000000000000, 'Parent': 47L, 'PresentationName': 'Time Step', 'Shadow': true, 'Simulation': 2L, 'Text': ''}
+{'Background': false, 'BackgroundColor': [1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000], 'ClassName': 'star.vis.SceneAnnotation', 'Color': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultCoordinateSystem': 3, 'DefaultHeight': 0.14999999999999999445, 'DefaultInteraction': true, 'DefaultLocation': 1, 'DefaultPosition': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultWidth': 0.14999999999999999445, 'DefaultWidthStretchFactor': 1.0000000000000000000, 'DisplayText': '', 'Dynamic': true, 'FontString': 'Dialog-ITALIC-14', 'NameManager': 246L, 'Opacity': 0.50000000000000000000, 'Parent': 47L, 'PresentationName': 'Scene', 'Shadow': true, 'ShowDatabase': true, 'ShowDate': true, 'ShowProduct': true, 'ShowProductVersion': false, 'ShowUser': true, 'Simulation': 2L, 'Text': ''}
+{'Background': false, 'BackgroundColor': [1.0000000000000000000, 1.0000000000000000000, 1.0000000000000000000], 'ClassName': 'star.vis.LogoAnnotation', 'Color': [0.0000000000000000000, 0.0000000000000000000, 0.0000000000000000000], 'DefaultCoordinateSystem': 3, 'DefaultHeight': 0.10000000000000000555, 'DefaultInteraction': false, 'DefaultLocation': 0, 'DefaultPosition': [0.014999999999999999445, 0.84999999999999997780, 0.0000000000000000000], 'DefaultWidth': 0.25000000000000000000, 'DefaultWidthStretchFactor': 1.0000000000000000000, 'DisplayText': '', 'Dynamic': false, 'FilePath': '', 'FontString': 'Dialog-ITALIC-24', 'NameManager': 246L, 'Opacity': 0.20000000000000001110, 'Parent': 47L, 'PresentationName': 'Logo', 'Shadow': true, 'Simulation': 2L, 'Text': '', 'isOpacitySet': false}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, -1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, -1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, -1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 1, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 1, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -3, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0], 'Fundamental': [0, 0, 1, 0, 1, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 'Fundamental': [1, 2, -3, 0, -1, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], 'Fundamental': [-1, -2, 3, 0, 2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], 'Fundamental': [1, 2, -3, 0, -2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -3, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -3, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -3, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -1, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, -3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, -1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 1, -1, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, -1, 0, 0, 0, 0, 1, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, -1, 0, 0, 0, 0, 1, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 3, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -2, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 0, -3, -1, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], 'Fundamental': [-1, -3, 3, 0, 2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], 'Fundamental': [1, 3, -3, 0, -2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], 'Fundamental': [1, 4, -3, 0, -2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0], 'Fundamental': [-1, -3, 4, 0, 2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 1, -2, 0, -2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 'Fundamental': [1, 1, -3, 0, -1, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 'Fundamental': [1, 1, -2, 0, -1, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [1, 0, -2, 0, -1, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], 'Fundamental': [1, 2, -2, 0, -2, 0, 0, 0, 0, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.LocalCoordinateSystemManager', 'Keys': [], 'NameManager': 372L, 'Parent': 191L}
+{'ClassName': 'star.common.FieldFunctionTypeOption', 'Parent': 195L, 'Selected': 0}
+{'ClassName': 'star.common.FieldFunctionChildManager', 'Keys': [], 'NameManager': 373L, 'Parent': 2L}
+{'ClassName': 'star.common.Dimensions', 'Dimensions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'Fundamental': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.base.report.MonitorDerivedDataGroup', 'DataSetFunction': 211L, 'Keys': [], 'NameManager': 374L, 'Parent': 211L}
+{'ClassName': 'star.base.report.TableDerivedDataGroup', 'DataSetFunction': 211L, 'Keys': [], 'NameManager': 375L, 'Parent': 211L}
+{'ClassName': 'star.base.report.DerivedDerivedDataGroup', 'DataSetFunction': 211L, 'Keys': [], 'NameManager': 376L, 'Parent': 211L}
+{'ClassName': 'star.base.report.ImportedDerivedDataGroup', 'DataSetFunction': 211L, 'Keys': [], 'NameManager': 377L, 'Parent': 211L}
+{'CalculatedRMS': 0.0000000000000000000, 'ClassName': 'star.base.report.DerivedDataStorage', 'Domain': 0, 'Error': 0.0000000000000000000, 'IResult': 386L, 'Nyquist': 0.0000000000000000000, 'Parent': 213L, 'SubtractedMean': 0.0000000000000000000, 'XAxisName': '', 'XAxisValues': 378L, 'XCrossInputValues': 382L, 'XInputValues': 380L, 'XResult': 384L, 'XUnits': 0L, 'YAxisName': '', 'YAxisValues': 379L, 'YCrossInputValues': 383L, 'YInputValues': 381L, 'YResult': 385L, 'YUnits': 0L, 'xSample': 0.0000000000000000000, 'xStart': 0.0000000000000000000}
+{'ClassName': 'NameManager'}
+{'ClassName': 'star.common.RampCalculatorManager', 'Keys': [388L], 'NameManager': 389L, 'Parent': 219L, 'RampCalculator': 388L, 'RampCalculatorOption': 387L, 'defaultInitialRampValue': 0.10000000000000000555}
+{'ClassName': 'Domain', 'interfaces': 391L, 'regions': 390L}
+{'ClassName': 'SerializableVector<Model>', 'className': 'SerializableVector<Model>', 'vector': []}
+{'ClassName': 'star.common.DeltaTimeUpdateFrequency', 'DeltaTime': 392L, 'Parent': 221L}
+{'ClassName': 'star.common.IterationUpdateFrequency', 'Iterations': 1, 'Parent': 221L}
+{'ClassName': 'star.common.TimeStepUpdateFrequency', 'Parent': 221L, 'TimeSteps': 1}
+{'ClassName': 'star.common.AutoSaveTriggerOption', 'Parent': 221L, 'Selected': 0}
+{'ClassName': 'star.common.DeltaTimeUpdateFrequency', 'DeltaTime': 393L, 'Parent': 222L}
+{'ClassName': 'star.common.IterationUpdateFrequency', 'Iterations': 1, 'Parent': 222L}
+{'ClassName': 'star.common.TimeStepUpdateFrequency', 'Parent': 222L, 'TimeSteps': 1}
+{'ClassName': 'star.common.AutoSaveTriggerOption', 'Parent': 222L, 'Selected': 0}
+{'ClassName': 'star.common.SolutionExportFormat', 'Parent': 222L, 'Selected': 0}
+{'ClassName': 'AutoExportFunctionVector', 'className': 'AutoExportFunctionVector', 'vector': []}
+{'ClassName': 'AutoExportFunctionVector', 'className': 'AutoExportFunctionVector', 'vector': []}
+{'ClassName': 'AutoExportRegionVector', 'className': 'AutoExportRegionVector', 'vector': []}
+{'ClassName': 'AutoExportBoundaryVector', 'className': 'AutoExportBoundaryVector', 'vector': []}
+{'ClassName': 'AutoExportPartVector', 'className': 'AutoExportPartVector', 'vector': []}
+{'Args': [], 'ClassName': 'star.common.UserFunction', 'NameManager': 369L, 'Parent': 223L, 'PresentationName': '<Select Function>', 'Sizes': [], 'Type': ''}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'NameManager'}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'MasterArray<Float4>', 'size': 0}
+{'ClassName': 'star.common.RampCalculatorOption', 'Parent': 351L, 'Selected': 0}
+{'ClassName': 'star.common.NoRampCalculator', 'Iteration': 1, 'Parent': 351L}
+{'ClassName': 'NameManager'}
+{'ClassName': 'SerializableList<Region>', 'list': []}
+{'ClassName': 'SerializableList<Interface>', 'list': []}
+{'ClassName': 'star.common.ScalarPhysicalQuantity', 'FieldFunctionManager': 25L, 'Function': 0L, 'IsExpression': false, 'Parent': 354L, 'Type': 0, 'Units': 62L, 'Value': 1.0000000000000000000}
+{'ClassName': 'star.common.ScalarPhysicalQuantity', 'FieldFunctionManager': 25L, 'Function': 0L, 'IsExpression': false, 'Parent': 358L, 'Type': 0, 'Units': 62L, 'Value': 1.0000000000000000000}
+{'ClassName': 'ClassVersions', 'Versions': {'ClientServerObjectManagerBase': 4, 'DirectBoundaryInterfaceType': 1, 'DirectRegionInterfaceType': 1, 'Domain': 6, 'DynamicLoader': 38, 'GroupableSimulationObjectManager': 1, 'IndirectBoundaryInterfaceType': 1, 'MasterArray<Float4>': 3, 'NameManager': 1, 'Neo.SerializableVector': 1, 'NullDataSetFunction': 1, 'SerializableArray<Float4>': 2, 'SerializableTimeStamper': 1, 'SimulationObjectManager': 1, 'StarVersion': 5, 'VisPartManager': 1, 'star.base.neo.ClientServerObject': 4, 'star.base.neo.NamedObject': 3, 'star.base.report.DataSetFunction': 4, 'star.base.report.DataSetFunctionManager': 4, 'star.base.report.DerivedData': 9, 'star.base.report.DerivedDataGroup': 1, 'star.base.report.DerivedDataManager': 2, 'star.base.report.DerivedDataStorage': 1, 'star.base.report.DerivedDerivedDataGroup': 1, 'star.base.report.ImportedDerivedDataGroup': 1, 'star.base.report.MonitorDerivedDataGroup': 1, 'star.base.report.MonitorManager': 10, 'star.base.report.ReportManager': 8, 'star.base.report.TableDerivedDataGroup': 1, 'star.cadmodeler.SolidModelManager': 1, 'star.common.AddonLicenseReservation': 1, 'star.common.AutoExport': 15, 'star.common.AutoSave': 11, 'star.common.AutoSaveBase': 1, 'star.common.AxisBoundary': 2, 'star.common.BaffleBoundary': 2, 'star.common.BaffleInterface': 2, 'star.common.BoundaryType': 1, 'star.common.ClientServerObjectFilterManager': 1, 'star.common.ConditionType': 2, 'star.common.ConditionTypeManager': 6, 'star.common.ContactBoundary': 2, 'star.common.ContactInterface': 2, 'star.common.ContinuumManager': 8, 'star.common.CoordinateSystem': 3, 'star.common.CoordinateSystemManager': 1, 'star.common.DeltaTimeUpdateFrequency': 1, 'star.common.Dimensions': 8, 'star.common.EnumeratedOption': 1, 'star.common.FanBoundary': 1, 'star.common.FanInterface': 1, 'star.common.FieldFunction': 19, 'star.common.FieldFunctionManager': 12, 'star.common.FluidFilmFsBoundary': 1, 'star.common.FluidFilmFsInterface': 1, 'star.common.FluidRegion': 2, 'star.common.FreeStreamBoundary': 2, 'star.common.FullyDevelopedBoundary': 2, 'star.common.FullyDevelopedInterface': 2, 'star.common.FunctionPhysicalQuantity': 5, 'star.common.GeometryFilterManager': 1, 'star.common.GeometryPartManager': 2, 'star.common.HeatExchangerInterface': 1, 'star.common.ImportManager': 4, 'star.common.ImportedModelManager': 1, 'star.common.IndirectRegionInterfaceType': 1, 'star.common.InletBoundary': 2, 'star.common.InterfaceManager': 7, 'star.common.InterfaceType': 1, 'star.common.InternalBoundary': 2, 'star.common.InternalInterface': 2, 'star.common.IterationUpdateFrequency': 1, 'star.common.LabCoordinateSystem': 1, 'star.common.LicenseReservation': 1, 'star.common.LicenseReservationManager': 0, 'star.common.LocalCoordinateSystemManager': 1, 'star.common.MappedBoundary': 1, 'star.common.MappedInterface': 1, 'star.common.MassFlowBoundary': 2, 'star.common.MeshManager': 2, 'star.common.MixingPlaneInflowBoundary': 2, 'star.common.MixingPlaneInterface': 2, 'star.common.MixingPlaneOutflowBoundary': 2, 'star.common.NoRampCalculator': 1, 'star.common.OutletBoundary': 2, 'star.common.OversetMeshBoundary': 2, 'star.common.OversetMeshInterface': 2, 'star.common.PartContactManager': 1, 'star.common.PartManager': 10, 'star.common.PartitionConfigManager': 15, 'star.common.PhysicalQuantity': 3, 'star.common.PlotManager': 8, 'star.common.PorousBaffleBoundary': 2, 'star.common.PorousBaffleInterface': 3, 'star.common.PorousRegion': 2, 'star.common.PressureBoundary': 2, 'star.common.RampCalculator': 1, 'star.common.RampCalculatorManager': 2, 'star.common.RegionManager': 6, 'star.common.RegionType': 1, 'star.common.RepresentationManager': 1, 'star.common.RepresentationManagerBase': 1, 'star.common.ScalarPhysicalQuantity': 6, 'star.common.Simulation': 25, 'star.common.SimulationIterator': 16, 'star.common.SimulationObject': 3, 'star.common.SimulationPartManager': 3, 'star.common.SolidRegion': 2, 'star.common.Solution': 5, 'star.common.Solver': 12, 'star.common.SolverManager': 6, 'star.common.SolverStoppingCriterionManager': 3, 'star.common.StagnationBoundary': 2, 'star.common.StarLog': 4, 'star.common.SymmetryBoundary': 2, 'star.common.TableManager': 7, 'star.common.TagManager': 1, 'star.common.TimeStepUpdateFrequency': 1, 'star.common.TransformManager': 5, 'star.common.Units': 4, 'star.common.UnitsManager': 3, 'star.common.UserFunction': 3, 'star.common.UserFunctionManager': 1, 'star.common.UserLibrary': 3, 'star.common.WallBoundary': 2, 'star.coremodule.ui.layout.Layout': 1, 'star.coremodule.ui.layout.LayoutManager': 1, 'star.post.CurrentSolutionView': 1, 'star.post.SolutionHistoryManager': 1, 'star.post.SolutionView': 1, 'star.post.SolutionViewManager': 1, 'star.vis.Annotation': 13, 'star.vis.AnnotationManager': 7, 'star.vis.BlackWhiteLookupTable': 2, 'star.vis.BlueRedLookupTable': 2, 'star.vis.CoolWarmLookupTable': 1, 'star.vis.DataSetManager': 5, 'star.vis.FixedAspectAnnotation': 1, 'star.vis.HighContrastLookupTable': 2, 'star.vis.IdentityTransform': 1, 'star.vis.ImageAnnotation2D': 4, 'star.vis.IterationAnnotation': 5, 'star.vis.LogoAnnotation': 5, 'star.vis.LookupTable': 2, 'star.vis.LookupTableManager': 2, 'star.vis.PhysicalTimeAnnotation': 4, 'star.vis.SceneAnnotation': 6, 'star.vis.SceneManager': 8, 'star.vis.SolutionStateAnnotation': 1, 'star.vis.SpectrumLookupTable': 2, 'star.vis.TimeStepAnnotation': 3, 'star.vis.ViewManager': 3, 'star.vis.VisTransform': 5, 'star.vis.VisualizationSolver': 1}}

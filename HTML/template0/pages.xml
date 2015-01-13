@@ -1,0 +1,13 @@
+<?xml version='1.0' standalone='yes'?>
+<folder url="pages/" title="home">
+	<folder url="guides/" title="guides">
+		<folder url="software/" title="software">
+			<folder url="fluent/" title="fluent">
+				<folder url="jcr/" title="journal command reference">
+					<page url="define" title="define"></page>
+				</folder>
+			</folder>
+		</folder>
+	</folder>
+</folder>
+

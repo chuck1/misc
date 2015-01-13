@@ -1,0 +1,52 @@
+// STAR-CCM+ macro: pinCircStag.java
+package MyJava.sunshot.pinCircStag;
+
+public class pinCircStag {
+	double D;
+	
+	double P_T;
+	double P_L;
+	double P_D;
+	
+	double S_T;
+	double S_L;
+	double S_D;
+	
+	double alpha;
+	double H;
+	double N_T;
+	
+	double f;
+	
+	public class LengthDependent {
+		double mdot;
+		double N_L;
+		double L;
+		double A_hs;
+	}
+	
+	LengthDependent simu;
+	LengthDependent full;
+	
+	public class Mesh {
+		
+		public class Values {
+			double baseSizeRatio_fluid;
+			double baseSize_fluid;
+			double numPointsInGap;
+			int numPrismLayers;
+		}
+		
+		Values fluid;
+		Values solid;
+	}
+	
+	Mesh mesh;
+	
+	private void eval() {
+	
+	}
+	
+	
+	
+}

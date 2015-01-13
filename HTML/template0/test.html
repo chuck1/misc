@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript"
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+			});
+		</script>
+		<script>
+			function load(file,id)
+			{
+				//alert("file="+file);
+				var client = new XMLHttpRequest();
+				client.open('GET', file);
+				client.onreadystatechange = function()
+				{
+					//alert("received");
+					document.getElementById(id).innerHTML = client.responseText;
+					MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+				}
+				client.send();
+			}
+			function toggle(element1,id)
+			{
+				//alert("toggle");
+				element = document.getElementById(id);
+				str1 = element1.innerHTML.slice(1);
+				disp = element.style.display;
+				//alert("disp="+disp);
+				//alert("str1="+str1);
+				if(disp == "none") {
+					disp = "block";
+					str1 = "-"+str1;
+				} else {
+					disp = "none";
+					str1 = "+"+str1;
+				}
+				//alert("str1="+str1);
+				element.style.display = disp;
+				element1.innerHTML = str1;
+				//alert("disp="+disp);
+			}
+		</script>
+		<style>
+			@media print
+			{
+			.noprint{
+				display:none;
+			}
+			.mid{
+				margin-left:0mm;
+				margin-right:0mm;
+				-moz-columns:100px 2;
+			}
+			}
+			
+			@media screen
+			{
+			.left{
+				width:200px;
+				position:absolute
+			}
+			.mid{
+				margin-left:200px;
+				margin-right:200px;
+				position:absolute;
+			}
+			}
+			
+			.click{
+				cursor:pointer
+			}
+			img{
+				border:1px solid black
+			}
+		</style>
+	</head>
+	<body>
+		<div class= "mid" id="cont">
+		</div>
+		<div class="left noprint" id="xml">
+			<a class="click" onclick="load('html/Equations/Fluids/ns.html','cont');"	>NS</a><br>
+			<span class="click" onclick="load('intro.html','cont');"	>Introduction</span><br>
+			<span class="click" onclick="load('option_1.html','cont');"	>Option 1</span><br>
+			<span class="click" onclick="load('option_2.html','cont');"	>Option 2</span><br>
+			<span class="click" onclick="load('option_3.html','cont');"	>Option 3</span><br>
+			<a class="click" onclick="load('ms.html','cont');"		>Molten Salt</a><br>
+			<a class="click" onclick="load('acknowledgement.html','cont');"	>Acknowledgement</a><br>
+			<a class="click" onclick="load('nomenclature.html','cont');"	>Nomenclature</a><br>
+
+		</div>
+	</body>
+</html>
+
+

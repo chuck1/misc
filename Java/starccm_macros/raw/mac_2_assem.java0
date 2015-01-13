@@ -1,0 +1,1121 @@
+
+    Simulation simulation_0 = 
+      getActiveSimulation();
+
+    PartImportManager partImportManager_0 = 
+      simulation_0.get(PartImportManager.class);
+
+    partImportManager_0.importCadPart(resolvePath("Z:\\Windows.Documents\\My Documents\\SYNC\\SUNSHOT\\solidworks\\unit_cell\\Assem1.x_b"), "SharpEdges", 30.0, 2, true, true);
+
+    simulation_0.getSceneManager().createGeometryScene("Geometry Scene", "Outline", "Geometry", 1);
+
+    Scene scene_0 = 
+      simulation_0.getSceneManager().getScene("Geometry Scene 1");
+
+    scene_0.initializeAndWait();
+
+    LogoAnnotation logoAnnotation_0 = 
+      ((LogoAnnotation) simulation_0.getAnnotationManager().getObject("Logo"));
+
+    logoAnnotation_0.setOpacity(0.20000000298023224);
+
+    PartDisplayer partDisplayer_1 = 
+      ((PartDisplayer) scene_0.getCreatorDisplayer());
+
+    partDisplayer_1.initialize();
+
+    PartDisplayer partDisplayer_0 = 
+      ((PartDisplayer) scene_0.getDisplayerManager().getDisplayer("Outline 1"));
+
+    partDisplayer_0.initialize();
+
+    PartDisplayer partDisplayer_2 = 
+      ((PartDisplayer) scene_0.getDisplayerManager().getDisplayer("Geometry 1"));
+
+    partDisplayer_2.initialize();
+
+    PartDisplayer partDisplayer_3 = 
+      ((PartDisplayer) scene_0.getHighlightDisplayer());
+
+    partDisplayer_3.initialize();
+
+    scene_0.open(true);
+
+    CurrentView currentView_0 = 
+      scene_0.getCurrentView();
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05169102546733484, 0.018417111445475642, 0.01487983142101257}), new DoubleVector(new double[] {-0.05169102546733484, 0.018417111445475642, 0.025390666821969166}), new DoubleVector(new double[] {0.0, 1.0, 0.0}), 0.002743878643877167, 0);
+
+    CompositePart compositePart_0 = 
+      ((CompositePart) simulation_0.get(SimulationPartManager.class).getPart("Assembly 1"));
+
+    CadPart cadPart_0 = 
+      ((CadPart) compositePart_0.getChildParts().getPart("Part2^Assem1"));
+
+    PartSurface partSurface_0 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces");
+
+    CadPart cadPart_1 = 
+      ((CadPart) compositePart_0.getChildParts().getPart("unit_cell_full_height"));
+
+    PartSurface partSurface_1 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces");
+
+    partDisplayer_3.getParts().setObjects(partSurface_0, partSurface_1);
+
+    compositePart_0.setPresentationName("cell");
+
+    partDisplayer_3.getParts().setObjects(partSurface_0);
+
+    cadPart_0.setPresentationName("solid");
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    cadPart_1.setPresentationName("fluid");
+
+    partDisplayer_3.getParts().setObjects(partSurface_0);
+
+    PartCurve partCurve_0 = 
+      ((PartCurve) cadPart_0.getPartCurveManager().getObject("Edges"));
+
+    cadPart_0.getPartSurfaceManager().splitPartSurfacesByPartCurves(new NeoObjectVector(new Object[] {partSurface_0}), new NeoObjectVector(new Object[] {partCurve_0}));
+
+    partDisplayer_3.getParts().setObjects();
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    PartCurve partCurve_1 = 
+      ((PartCurve) cadPart_1.getPartCurveManager().getObject("Edges"));
+
+    cadPart_1.getPartSurfaceManager().splitPartSurfacesByPartCurves(new NeoObjectVector(new Object[] {partSurface_1}), new NeoObjectVector(new Object[] {partCurve_1}));
+
+    partDisplayer_3.getParts().setObjects();
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051836610758754516, 0.01853966375726613, 0.015696668489214576}), new DoubleVector(new double[] {-0.05670161509158024, 0.022634978071264286, 0.024360057634155094}), new DoubleVector(new double[] {0.09551249068477233, 0.9195984949843268, -0.381072135094856}), 0.0028054834458961053, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051836610758754516, 0.01853966375726613, 0.015696668489214576}), new DoubleVector(new double[] {-0.05670161509158024, 0.022634978071264286, 0.024360057634155094}), new DoubleVector(new double[] {0.09551249068477233, 0.9195984949843268, -0.381072135094856}), 0.0028054834458961053, 0);
+
+    PartSurface partSurface_2 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 8");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051836610758754516, 0.01853966375726613, 0.015696668489214576}), new DoubleVector(new double[] {-0.05670161509158024, 0.022634978071264286, 0.024360057634155094}), new DoubleVector(new double[] {0.09551249068477233, 0.9195984949843268, -0.381072135094856}), 0.0028054834458961053, 0);
+
+    PartSurface partSurface_3 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 6");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_3);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051836610758754516, 0.01853966375726613, 0.015696668489214576}), new DoubleVector(new double[] {-0.05670161509158024, 0.022634978071264286, 0.024360057634155094}), new DoubleVector(new double[] {0.09891854694391716, 0.9199587382726789, -0.3793297258932454}), 0.0028054834458961053, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051836610758754516, 0.01853966375726613, 0.015696668489214576}), new DoubleVector(new double[] {-0.05670161509158024, 0.022634978071264286, 0.024360057634155094}), new DoubleVector(new double[] {0.09891854694391716, 0.9199587382726789, -0.3793297258932454}), 0.0028054834458961053, 0);
+
+    PartSurface partSurface_4 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 2");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_3, partSurface_4);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053467226114942916, 0.018875341017803197, 0.015641990467258324}), new DoubleVector(new double[] {-0.05806511176267596, 0.0165329632957123, 0.00610471464137715}), new DoubleVector(new double[] {0.30235516800040946, 0.8816569979665485, -0.3623013805108366}), 0.0028307868171122833, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053467226114942916, 0.018875341017803197, 0.015641990467258324}), new DoubleVector(new double[] {-0.05806511176267596, 0.0165329632957123, 0.00610471464137715}), new DoubleVector(new double[] {0.30235516800040946, 0.8816569979665485, -0.3623013805108366}), 0.0028307868171122833, 0);
+
+    PartSurface partSurface_5 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 19");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_3, partSurface_4, partSurface_5);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053467226114942916, 0.018875341017803197, 0.015641990467258324}), new DoubleVector(new double[] {-0.05806511176267596, 0.0165329632957123, 0.00610471464137715}), new DoubleVector(new double[] {0.30235516800040946, 0.8816569979665485, -0.3623013805108366}), 0.0028307868171122833, 0);
+
+    PartSurface partSurface_6 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 18");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_3, partSurface_4, partSurface_5, partSurface_6);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052849339064515895, 0.018866422273691973, 0.012129877998686771}), new DoubleVector(new double[] {-0.04367095927909335, 0.021852535803086454, 0.006143787312546902}), new DoubleVector(new double[] {0.06154420511582251, 0.852249553421456, 0.5195026559215941}), 0.0029649025131500404, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052849339064515895, 0.018866422273691973, 0.012129877998686771}), new DoubleVector(new double[] {-0.04367095927909335, 0.021852535803086454, 0.006143787312546902}), new DoubleVector(new double[] {0.06154420511582251, 0.852249553421456, 0.5195026559215941}), 0.0029649025131500404, 0);
+
+    PartSurface partSurface_7 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 12");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_3, partSurface_4, partSurface_5, partSurface_6, partSurface_7);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053050349859258085, 0.018226868045322156, 0.01346112544153033}), new DoubleVector(new double[] {-0.05970817640245221, 0.022152064530819023, 0.00507086359399482}), new DoubleVector(new double[] {0.08937376258067194, 0.9274972799046138, 0.3629891545648662}), 0.002977946600859872, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053050349859258085, 0.018226868045322156, 0.01346112544153033}), new DoubleVector(new double[] {-0.05970817640245221, 0.022152064530819023, 0.00507086359399482}), new DoubleVector(new double[] {0.08937376258067194, 0.9274972799046138, 0.3629891545648662}), 0.002977946600859872, 0);
+
+    cadPart_0.combinePartSurfaces(new NeoObjectVector(new Object[] {partSurface_2, partSurface_3, partSurface_4, partSurface_5, partSurface_6, partSurface_7}));
+
+    partDisplayer_3.getParts().setObjects(partSurface_2);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053050349859258085, 0.018226868045322156, 0.01346112544153033}), new DoubleVector(new double[] {-0.05970817640245221, 0.022152064530819023, 0.00507086359399482}), new DoubleVector(new double[] {0.08937376258067194, 0.9274972799046138, 0.3629891545648662}), 0.002977946600859872, 0);
+
+    partSurface_2.setPresentationName("symmetry");
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05362424841801664, 0.018105692325374817, 0.01236422098957042}), new DoubleVector(new double[] {-0.05584031970879441, 0.011553620943904106, 0.0031811369783230938}), new DoubleVector(new double[] {-0.3420982663586217, 0.8019963762828599, -0.48966375053049116}), 0.0030011902257277563, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05362424841801664, 0.018105692325374817, 0.01236422098957042}), new DoubleVector(new double[] {-0.05584031970879441, 0.011553620943904106, 0.0031811369783230938}), new DoubleVector(new double[] {-0.3420982663586217, 0.8019963762828599, -0.48966375053049116}), 0.0030011902257277563, 0);
+
+    PartSurface partSurface_8 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 25");
+
+    partDisplayer_3.getParts().setObjects(partSurface_8);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05362424841801664, 0.018105692325374817, 0.01236422098957042}), new DoubleVector(new double[] {-0.05584031970879441, 0.011553620943904106, 0.0031811369783230938}), new DoubleVector(new double[] {-0.3420982663586217, 0.8019963762828599, -0.48966375053049116}), 0.0030011902257277563, 0);
+
+    partSurface_8.setPresentationName("bottom");
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.054050409750603295, 0.017951078272809076, 0.010550401008038585}), new DoubleVector(new double[] {-0.056232427083538386, 0.0243147170894969, 9.534577796111872E-4}), new DoubleVector(new double[] {-0.09502384727924583, 0.8195655880494364, 0.5650510732079288}), 0.003059534145660968, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051564581749225555, 0.01885032063112434, 0.01605425278167564}), new DoubleVector(new double[] {-0.054580938335574244, 0.02764722777211428, 0.0027877207157075905}), new DoubleVector(new double[] {-0.09502384727924583, 0.8195655880494364, 0.5650510732079288}), 0.004229410019859685, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05209659762410609, 0.020423350564678915, 0.01368622092391559}), new DoubleVector(new double[] {-0.05057366214205083, 0.028890414781089054, 0.0034675775808024737}), new DoubleVector(new double[] {-0.09219541107914482, 0.7734422489521837, 0.627126058868339}), 0.0034870890572667535, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05209659762410609, 0.020423350564678915, 0.01368622092391559}), new DoubleVector(new double[] {-0.05057366214205083, 0.028890414781089054, 0.0034675775808024737}), new DoubleVector(new double[] {-0.09219541107914482, 0.7734422489521837, 0.627126058868339}), 0.0034870890572667535, 0);
+
+    PartSurface partSurface_9 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 22");
+
+    partDisplayer_3.getParts().setObjects(partSurface_9);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05209659762410609, 0.020423350564678915, 0.01368622092391559}), new DoubleVector(new double[] {-0.05057366214205083, 0.028890414781089054, 0.0034675775808024737}), new DoubleVector(new double[] {-0.09219541107914482, 0.7734422489521837, 0.627126058868339}), 0.0034870890572667535, 0);
+
+    partSurface_9.setPresentationName("top");
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05201372320560675, 0.02050170342475492, 0.013527533216411739}), new DoubleVector(new double[] {-0.04211995722378452, 0.020306791853195696, 0.004505965781996559}), new DoubleVector(new double[] {0.1769405615867261, 0.9688774162480074, 0.17311438400652773}), 0.0034956978342315973, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05202769301217162, 0.020778509729193068, 0.011839000218018755}), new DoubleVector(new double[] {-0.06396620169842279, 0.023737327530568415, 0.005968808951810356}), new DoubleVector(new double[] {0.17282188308496277, 0.9749607131019695, 0.13994357661095558}), 0.003557807258348253, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05077243967718098, 0.01840853866214802, 0.015541882153033228}), new DoubleVector(new double[] {-0.06552199225432431, 0.02206404035624421, 0.008289494355339527}), new DoubleVector(new double[] {0.17282188308496277, 0.9749607131019695, 0.13994357661095558}), 0.004395529340844982, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05086850351416456, 0.018369775718597207, 0.015589786253873274}), new DoubleVector(new double[] {-0.06226520010829522, 0.024173740340011872, 0.005455813897092542}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.004259780581041722, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0520674033197997, 0.01893804173143398, 0.01448820066841763}), new DoubleVector(new double[] {-0.06124173646120655, 0.023610229372651004, 0.006330359694148341}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0034291205207567844, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052062921174011886, 0.018897694139225502, 0.014460217529900458}), new DoubleVector(new double[] {-0.06032061917882675, 0.02310306950202622, 0.00711745091149856}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.003086506806115475, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05205888685252779, 0.018861381107483557, 0.01443503305226861}), new DoubleVector(new double[] {-0.05949161362468493, 0.022646625618463916, 0.007825833007113757}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.002778154608812683, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052085948171667035, 0.018847512074080894, 0.014380297782810605}), new DoubleVector(new double[] {-0.058745795675136415, 0.022239154465794622, 0.00845834400058113}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.00248927299535099, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052080103028958526, 0.018819649904281255, 0.014357890252498163}), new DoubleVector(new double[] {-0.05807455952054275, 0.021872430428392257, 0.009027603894701766}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0022405676193837268, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05207484253061256, 0.01879457401771302, 0.014337723359539093}), new DoubleVector(new double[] {-0.057470446981408456, 0.02154237879473013, 0.009539937799410338}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0020167327323883945, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05236040757437245, 0.018980906323647996, 0.014020624764288643}), new DoubleVector(new double[] {-0.056926985834611026, 0.021306515191483945, 0.009960011456554656}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0017068649002018493, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052326467745839024, 0.019000434916419978, 0.01399394807668805}), new DoubleVector(new double[] {-0.05643787080249334, 0.02109423794856238, 0.010338077747984542}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.001536732574822711, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052295922290434005, 0.01901801084866908, 0.013969938710813914}), new DoubleVector(new double[] {-0.05599766727358742, 0.02090318842993297, 0.01067833741027144}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.001383613336107099, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05227507094880768, 0.019036840994823126, 0.013941878985986771}), new DoubleVector(new double[] {-0.05560162435014828, 0.02073094578151814, 0.01098389901923904}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0012433767507794137, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05225077602242233, 0.01905054217201512, 0.013921547928041756}), new DoubleVector(new double[] {-0.05524522420885241, 0.020575516640814275, 0.011258876785184198}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.001119244697806531, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052230824766544115, 0.019063555234728434, 0.013901095577309005}), new DoubleVector(new double[] {-0.05492449755655137, 0.02043535463692723, 0.011505874701971815}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0010068228936148727, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05221463722262044, 0.0190753827980775, 0.01387988990874902}), new DoubleVector(new double[] {-0.05463587492771364, 0.020308439926897917, 0.011726919021970627}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 9.049939403979374E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05216840777377523, 0.01905498698506766, 0.013887885714790736}), new DoubleVector(new double[] {-0.05437613916394666, 0.020179312334637874, 0.011924765200490422}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 8.251909863821278E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052154987402345726, 0.019050696226379237, 0.013870022578218875}), new DoubleVector(new double[] {-0.05414240234036901, 0.020062821616669845, 0.012102808028192734}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 7.428425850894209E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05214272967162211, 0.019046743182824958, 0.013854105275084266}), new DoubleVector(new double[] {-0.05393203919914913, 0.01995797997049862, 0.012263046573124816}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 6.687960775193339E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05213155181889984, 0.019042811534854848, 0.013840186519208953}), new DoubleVector(new double[] {-0.05374274371064299, 0.01986333883947778, 0.01240751048387401}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 6.022204659123754E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0521236254037792, 0.019039936394403007, 0.013825793992419098}), new DoubleVector(new double[] {-0.05357262044307018, 0.019777862149922498, 0.012537343821617}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 5.415956175911842E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052113344179698116, 0.019035068558284126, 0.013816097449595157}), new DoubleVector(new double[] {-0.05341962237713153, 0.01970031329661764, 0.012654551467062534}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 4.8825187657718154E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052098408975366654, 0.019026959315008373, 0.01381297871508768}), new DoubleVector(new double[] {-0.05328152937223725, 0.019629483815822718, 0.012760944970256307}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 4.422187824337898E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052081539136888656, 0.019016993627837885, 0.013815023862223112}), new DoubleVector(new double[] {-0.053157012809019806, 0.019564697174453912, 0.012858709865987078}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 4.019833138600275E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05208430810467943, 0.01902020731050029, 0.013823005822566526}), new DoubleVector(new double[] {-0.05326859477352852, 0.01962332575546733, 0.01276993502564791}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 4.426547037277536E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0520887807742242, 0.019024468986510838, 0.013830517260236631}), new DoubleVector(new double[] {-0.05339133493448811, 0.019687817194582093, 0.012672282701274825}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 4.8685993101763546E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05209370058063176, 0.019029156763871003, 0.013838779957351617}), new DoubleVector(new double[] {-0.05352634911154366, 0.019758757777608334, 0.012564865144464431}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 5.354857296613013E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052099112554686876, 0.019034313414203627, 0.013847868757891164}), new DoubleVector(new double[] {-0.05367486470630476, 0.019836792418937196, 0.012446705831972998}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 5.889740382711897E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05210506551474851, 0.019039985621910924, 0.013857866626461202}), new DoubleVector(new double[] {-0.05383823186054197, 0.019922630524398945, 0.012316730588232423}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 6.478112567573601E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05211161393343091, 0.01904622513320325, 0.013868864137290908}), new DoubleVector(new double[] {-0.0540179357302029, 0.020017052440406868, 0.012173757820117788}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 7.12532136311153E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05211881721024302, 0.01905308860390624, 0.01388096138474385}), new DoubleVector(new double[] {-0.05421560998682993, 0.020120916548015583, 0.012016487775191691}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 7.837250977422255E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051810415700977164, 0.018914709827545267, 0.014119767241083487}), new DoubleVector(new double[] {-0.054433312758854685, 0.020250465465488116, 0.01178748033148007}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 9.803688166071178E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05178832851729288, 0.018924009569634817, 0.014100439094775579}), new DoubleVector(new double[] {-0.054672785808081915, 0.0203929692747079, 0.011535572143397286}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0010781330408037202, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05176403256645577, 0.018934239261089034, 0.014079178177216083}), new DoubleVector(new double[] {-0.05493620616223187, 0.02054972346484966, 0.011258473136506224}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0011856737056542813, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05173730724819542, 0.018945492037628693, 0.014055790965464367}), new DoubleVector(new double[] {-0.05522596855179682, 0.0207221530740056, 0.010953664228926057}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.001303968351896506, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05170790913792565, 0.01895786995931944, 0.014030065263893216}), new DoubleVector(new double[] {-0.05554470718031826, 0.020911825644077134, 0.010618374430587873}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0014340925600125445, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05166326735334719, 0.01896505684625711, 0.014011373596118433}), new DoubleVector(new double[] {-0.05589546867258212, 0.02112037848043968, 0.010248089137045748}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0015818837367330555, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051627099268816826, 0.01897955126002287, 0.013979308366230936}), new DoubleVector(new double[] {-0.05628130631407237, 0.02134978660043848, 0.009840775314149411}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.001739618197937967, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05145805269827683, 0.01893556650810324, 0.01403799703495874}), new DoubleVector(new double[] {-0.05670582193107744, 0.02160808364646506, 0.00937166693651994}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.00196147587917582, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051402573611329876, 0.01895362847255582, 0.013986538402564808}), new DoubleVector(new double[] {-0.05717278910978302, 0.021892210397094297, 0.008855647721127523}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.002156752329565013, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0513415464205507, 0.0189734965340765, 0.013929934080448281}), new DoubleVector(new double[] {-0.057686453006359155, 0.022204749822786456, 0.008288026584195864}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.002371556497930319, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05127441631555608, 0.018995351302372093, 0.013867669499636906}), new DoubleVector(new double[] {-0.05825148329259291, 0.022548543191047835, 0.007663643333571038}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.002607841156069349, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051200572484557706, 0.01901939118311433, 0.013799179096972668}), new DoubleVector(new double[] {-0.058873016607450035, 0.02292671589613535, 0.006976821757883731}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.002867754547458659, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051119344725780405, 0.019045835283810826, 0.013723839249169466}), new DoubleVector(new double[] {-0.05955670325379287, 0.023342705871731616, 0.006221318024627692}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0031536591078001144, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.050929318191798814, 0.019026010110229745, 0.013716758159400683}), new DoubleVector(new double[] {-0.06030914091049932, 0.0238028468685688, 0.005376195316675685}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0035059270325150478, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05058925074308482, 0.018954056823930896, 0.013679841409904168}), new DoubleVector(new double[] {-0.0610748014193777, 0.024294004646407647, 0.0043560623813475915}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.003919218589657377, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05039804389784002, 0.01896803656522491, 0.01347662686203134}), new DoubleVector(new double[] {-0.06191702797914391, 0.02483427820203038, 0.003233916152486688}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.004305488375301485, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0501877142215579, 0.018983413187499572, 0.013253092768056054}), new DoubleVector(new double[] {-0.06284347719488675, 0.025428579113215385, 0.0019995553007396945}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.004730385941819134, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.050414631762597806, 0.01896423515757039, 0.013502932868502928}), new DoubleVector(new double[] {-0.06182438305756963, 0.02477484811091188, 0.003357352237661387}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.00426466007929595, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05041912953631038, 0.01884145868102843, 0.013913581941763337}), new DoubleVector(new double[] {-0.06089433076840364, 0.024176135870257222, 0.004599005666001023}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.003915350244030909, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05060694544069903, 0.018824546833951482, 0.014119759204229339}), new DoubleVector(new double[] {-0.06005728370815425, 0.023637294853668032, 0.005716493751506695}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0035322838599312883, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.050535082255934484, 0.01878820716590087, 0.014573785417088057}), new DoubleVector(new double[] {-0.05928140268764999, 0.02324242194067848, 0.006796534461385647}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0032691408096077817, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.050477835112850596, 0.01870773653195756, 0.015011615267874536}), new DoubleVector(new double[] {-0.05858734762780154, 0.022837645874102887, 0.007800615573822353}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.0030311190306403237, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.04998268630113541, 0.018673547645926342, 0.015073967910255125}), new DoubleVector(new double[] {-0.05918022064455058, 0.023357550900072944, 0.0068954963666049435}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.003437792509956112, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.049402993362605306, 0.018637462145085354, 0.015155908067665376}), new DoubleVector(new double[] {-0.059847559303207565, 0.023956537782889843, 0.005868572773054711}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.003903899590878033, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.048732016913923135, 0.018597669853143033, 0.015256591186712527}), new DoubleVector(new double[] {-0.060601896003022605, 0.02464261083446957, 0.004701863720403101}), new DoubleVector(new double[] {0.28480734755275094, 0.9342191676184557, 0.2147540957333439}), 0.004436643550649567, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.048732016913923135, 0.018597669853143033, 0.015256591186712527}), new DoubleVector(new double[] {-0.060601896003022605, 0.02464261083446957, 0.004701863720403101}), new DoubleVector(new double[] {0.22604157456459573, 0.9329705215155939, 0.2801271364064524}), 0.004436643550649567, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.04969274406771531, 0.01910851151649621, 0.014427380487757541}), new DoubleVector(new double[] {-0.06033329495204613, 0.023475638569570346, 0.003743607936695364}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.00409807444651935, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051226417679779035, 0.018734291079787788, 0.016317523637184743}), new DoubleVector(new double[] {-0.062104834459503114, 0.02319904377255557, 0.00539491898507237}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.004189685506717841, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051226417679779035, 0.018734291079787788, 0.016317523637184743}), new DoubleVector(new double[] {-0.062104834459503114, 0.02319904377255557, 0.00539491898507237}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.004189685506717841, 0);
+
+    partDisplayer_3.getParts().setObjects();
+
+    PartSurface partSurface_10 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 9");
+
+    partDisplayer_3.getParts().setObjects(partSurface_10);
+
+    PartSurface partSurface_11 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 10");
+
+    PartSurface partSurface_12 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 13");
+
+    PartSurface partSurface_13 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 20");
+
+    PartSurface partSurface_14 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 14");
+
+    PartSurface partSurface_15 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 16");
+
+    PartSurface partSurface_16 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 21");
+
+    PartSurface partSurface_17 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 15");
+
+    PartSurface partSurface_18 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 17");
+
+    PartSurface partSurface_19 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 11");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_12, partSurface_13, partSurface_14, partSurface_15, partSurface_16, partSurface_17, partSurface_10, partSurface_18, partSurface_19);
+
+    PartSurface partSurface_20 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 23");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_20, partSurface_12, partSurface_13, partSurface_14, partSurface_15, partSurface_16, partSurface_17, partSurface_10, partSurface_18, partSurface_19);
+
+    PartSurface partSurface_21 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 24");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_20, partSurface_12, partSurface_13, partSurface_14, partSurface_15, partSurface_16, partSurface_17, partSurface_21, partSurface_10, partSurface_18, partSurface_19);
+
+    PartSurface partSurface_22 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 26");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_20, partSurface_15, partSurface_17, partSurface_16, partSurface_21, partSurface_19, partSurface_12, partSurface_14, partSurface_13, partSurface_10, partSurface_18, partSurface_22);
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_0, partSurface_20, partSurface_15, partSurface_17, partSurface_16, partSurface_21, partSurface_19, partSurface_12, partSurface_14, partSurface_13, partSurface_10, partSurface_18, partSurface_22);
+
+    PartSurface partSurface_23 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 3");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_0, partSurface_20, partSurface_15, partSurface_17, partSurface_16, partSurface_21, partSurface_19, partSurface_23, partSurface_12, partSurface_14, partSurface_13, partSurface_10, partSurface_18, partSurface_22);
+
+    PartSurface partSurface_24 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 4");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_0, partSurface_20, partSurface_15, partSurface_17, partSurface_16, partSurface_21, partSurface_19, partSurface_23, partSurface_24, partSurface_12, partSurface_14, partSurface_13, partSurface_10, partSurface_18, partSurface_22);
+
+    PartSurface partSurface_25 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 5");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_0, partSurface_20, partSurface_15, partSurface_17, partSurface_16, partSurface_21, partSurface_19, partSurface_23, partSurface_24, partSurface_12, partSurface_14, partSurface_13, partSurface_10, partSurface_18, partSurface_25, partSurface_22);
+
+    PartSurface partSurface_26 = 
+      cadPart_0.getPartSurfaceManager().getPartSurface("Faces 7");
+
+    partDisplayer_3.getParts().setObjects(partSurface_11, partSurface_0, partSurface_20, partSurface_15, partSurface_17, partSurface_16, partSurface_21, partSurface_19, partSurface_23, partSurface_24, partSurface_12, partSurface_14, partSurface_13, partSurface_10, partSurface_26, partSurface_18, partSurface_25, partSurface_22);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05238139928040137, 0.019088350396453874, 0.01495624205316139}), new DoubleVector(new double[] {-0.06107985739536781, 0.0226583978655038, 0.006222451006487873}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.003350101823915545, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05231700670958117, 0.01895394765259846, 0.01483944855724362}), new DoubleVector(new double[] {-0.060157378037646037, 0.02217181654915721, 0.006967229825761825}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0030196204820636275, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05228502586100402, 0.018841370322364354, 0.01470959245631103}), new DoubleVector(new double[] {-0.059328534319203596, 0.021732188351500103, 0.007637473432877649}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0027127187624182746, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05226007387525141, 0.018738253023669514, 0.01459273164312239}), new DoubleVector(new double[] {-0.05858643693508857, 0.021334738070968005, 0.008240671045745475}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0024365192250620092, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05228387194732707, 0.018660381053070156, 0.014451922762256396}), new DoubleVector(new double[] {-0.05792933687455381, 0.02097740983089209, 0.008783526089645359}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0021742798665676513, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05153385809903252, 0.01830862580158069, 0.015302673290534068}), new DoubleVector(new double[] {-0.05733970676133092, 0.02069147975668136, 0.009473241407902216}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0022360496464859415, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051581683660072285, 0.01828871544190373, 0.01534257459047195}), new DoubleVector(new double[] {-0.05680903965943032, 0.0204341426898917, 0.010093985194333388}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.002013250467640239, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051624727075330654, 0.018270796286600298, 0.01537848534842674}), new DoubleVector(new double[] {-0.05633143926771978, 0.02020253932978101, 0.010652654602121442}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.00181273104864852, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05166346627531629, 0.01825466909864439, 0.015410804903820113}), new DoubleVector(new double[] {-0.055901598915180296, 0.019994096305681386, 0.011155457069130691}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0016322635229311774, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051646276061886945, 0.018215145384547018, 0.015504462067838625}), new DoubleVector(new double[] {-0.05551500979902312, 0.019802962777485555, 0.011620013625507524}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0014899941780168603, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05166421030980344, 0.01819081487480697, 0.01555895331059546}), new DoubleVector(new double[] {-0.055167129469794164, 0.019628493543385535, 0.012041805375594326}), new DoubleVector(new double[] {0.1678768087962558, 0.9597603507195609, 0.2251165170640559}), 0.0013491052910540914, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051618590319158095, 0.018073293870757366, 0.016541265801709896}), new DoubleVector(new double[] {-0.048907015034350625, 0.01772223523451493, 0.012042385661588254}), new DoubleVector(new double[] {0.145096398343364, 0.9893644255224819, 0.010250302354242277}), 0.0013743312272829888, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05149715867950908, 0.01816035761240029, 0.014019724735401211}), new DoubleVector(new double[] {-0.04992465823524029, 0.01795677120838318, 0.011410728017260804}), new DoubleVector(new double[] {0.145096398343364, 0.9893644255224819, 0.010250302354242277}), 7.970040432155737E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0512541978830004, 0.018114172386409756, 0.013649110165707848}), new DoubleVector(new double[] {-0.049196630298643566, 0.016855332701751415, 0.012424470373085876}), new DoubleVector(new double[] {0.39511488357508995, 0.8850918573753873, -0.24596063259235285}), 7.061939549651882E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05134222072757183, 0.018181085478146775, 0.013690054363746517}), new DoubleVector(new double[] {-0.04898173126333185, 0.01673691526697384, 0.012285119065411323}), new DoubleVector(new double[] {0.39511488357508995, 0.8850918573753873, -0.24596063259235285}), 8.101621560714654E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05140838388499676, 0.018233038723886666, 0.013702730270836863}), new DoubleVector(new double[] {-0.048745678250826485, 0.01660396974635189, 0.01211791949697209}), new DoubleVector(new double[] {0.39511488357508995, 0.8850918573753873, -0.24596063259235285}), 9.138881449138752E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051436849080240835, 0.01826233748455002, 0.013685927260726852}), new DoubleVector(new double[] {-0.04848600765070525, 0.016456984249557997, 0.011929621483069317}), new DoubleVector(new double[] {0.39511488357508995, 0.8850918573753873, -0.24596063259235285}), 0.0010127814976489558, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05139683725735874, 0.018201875091370223, 0.013686820659781749}), new DoubleVector(new double[] {-0.04876072455176488, 0.014918578027038632, 0.013264902465171096}), new DoubleVector(new double[] {0.7013128021918477, 0.6103914345020549, -0.3682154941991741}), 0.0011046910533124138, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0515613396333666, 0.01778911815263306, 0.0142012629003631}), new DoubleVector(new double[] {-0.04902893708151124, 0.014634992820067106, 0.013795943844603864}), new DoubleVector(new double[] {0.7013128021918477, 0.6103914345020549, -0.3682154941991741}), 0.001061230210864573, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051516674966390875, 0.017671204242053675, 0.01425090141060349}), new DoubleVector(new double[] {-0.04885927381241224, 0.015580276479715435, 0.012714257796873107}), new DoubleVector(new double[] {0.48529503636143106, 0.8264771223546552, -0.28534942422813037}), 9.695920423424363E-4, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05146253733907805, 0.01763411596562117, 0.014179671158212392}), new DoubleVector(new double[] {-0.04861094905603289, 0.015390395592861247, 0.012530738735055561}), new DoubleVector(new double[] {0.48529503636143106, 0.8264771223546552, -0.28534942422813037}), 0.0010404440831742626, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051471044928070746, 0.01764059342923085, 0.014148470854594178}), new DoubleVector(new double[] {-0.04833777507858799, 0.015175237039446753, 0.01233665591762349}), new DoubleVector(new double[] {0.48529503636143106, 0.8264771223546552, -0.28534942422813037}), 0.0011432197611645916, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05149029650836461, 0.01764360013406118, 0.014132275002118558}), new DoubleVector(new double[] {-0.04803726576162584, 0.014926645698426244, 0.012135558158277883}), new DoubleVector(new double[] {0.48529503636143106, 0.8264771223546552, -0.28534942422813037}), 0.0012598892451706194, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051540272591636765, 0.0176423811901097, 0.014158223530435188}), new DoubleVector(new double[] {-0.0477066850874065, 0.01462599259181812, 0.011941449541595638}), new DoubleVector(new double[] {0.48529503636143106, 0.8264771223546552, -0.28534942422813037}), 0.0013987409963151381, 0);
+
+    cadPart_0.combinePartSurfaces(new NeoObjectVector(new Object[] {partSurface_10, partSurface_11, partSurface_19, partSurface_12, partSurface_14, partSurface_17, partSurface_15, partSurface_18, partSurface_13, partSurface_16, partSurface_20, partSurface_21, partSurface_22, partSurface_0, partSurface_23, partSurface_24, partSurface_25, partSurface_26}));
+
+    partDisplayer_3.getParts().setObjects(partSurface_10);
+
+    partDisplayer_3.getParts().setObjects(partSurface_10);
+
+    partSurface_10.setPresentationName("wall");
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_10, partSurface_9, partSurface_8);
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    PartSurface partSurface_27 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces 2");
+
+    PartSurface partSurface_28 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces 7");
+
+    PartSurface partSurface_29 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces 3");
+
+    PartSurface partSurface_30 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces 4");
+
+    PartSurface partSurface_31 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces 6");
+
+    PartSurface partSurface_32 = 
+      cadPart_1.getPartSurfaceManager().getPartSurface("Faces 5");
+
+    partDisplayer_3.getParts().setObjects(partSurface_27, partSurface_28, partSurface_29, partSurface_1, partSurface_30, partSurface_31, partSurface_32);
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    partDisplayer_3.getParts().setObjects(partSurface_27);
+
+    partDisplayer_3.getParts().setObjects(partSurface_30);
+
+    partDisplayer_3.getParts().setObjects(partSurface_28);
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    partDisplayer_3.getParts().setObjects(partSurface_27, partSurface_28, partSurface_29, partSurface_1, partSurface_30, partSurface_31, partSurface_32);
+
+    partDisplayer_3.getParts().setObjects(partSurface_28);
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    partDisplayer_3.getParts().setObjects(partSurface_27);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05133339963536021, 0.01773819107798333, 0.01402794372554998}), new DoubleVector(new double[] {-0.04770832389633125, 0.021201967742238113, 0.011671476427260125}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0014462363596289397, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05158594299687693, 0.01751841632926339, 0.014146456852777113}), new DoubleVector(new double[] {-0.04734505098424587, 0.021570608296129945, 0.011389680425804946}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0016919183673580061, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05159386947495924, 0.017530496697578758, 0.014100945329679426}), new DoubleVector(new double[] {-0.04694545044123468, 0.021972082621244417, 0.011079257444985951}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0018545026656917461, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051608120318380635, 0.017536133324639144, 0.014054613457278563}), new DoubleVector(new double[] {-0.04650588908338136, 0.02241133890921443, 0.010737926601844893}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0020355525949002713, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05160683641265395, 0.0175525091730003, 0.013992967679079489}), new DoubleVector(new double[] {-0.04602237065870274, 0.022888492074711386, 0.010362806028683004}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0022279417049173985, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05160311704758109, 0.01756616079138854, 0.013924032340664503}), new DoubleVector(new double[] {-0.045490500588876034, 0.023406794138506905, 0.009950548245740402}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0024386492342401557, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05160585391019069, 0.017569538179861316, 0.01385293400301686}), new DoubleVector(new double[] {-0.04490544372625799, 0.023971811154786263, 0.009497356735051931}), new DoubleVector(new double[] {-0.5277946696581817, 0.7804253046212875, 0.33521505125394}), 0.0026731515504907037, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05173996874108577, 0.017610635132548937, 0.013947072481740146}), new DoubleVector(new double[] {-0.04370888269252077, 0.019717917022070704, 0.008497657785613092}), new DoubleVector(new double[] {-0.18416871512447391, 0.9771153866295981, 0.10643028507474495}), 0.002592647123015095, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05167314158147761, 0.018828540758896315, 0.013355628512828899}), new DoubleVector(new double[] {-0.04415714767201626, 0.02080066728716254, 0.008255724537383583}), new DoubleVector(new double[] {-0.18416871512447391, 0.9771153866295981, 0.10643028507474495}), 0.0024263617483522982, 0);
+
+    partDisplayer_3.getParts().setObjects(partSurface_9);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052385835607186584, 0.01863374066218291, 0.013825232706287984}), new DoubleVector(new double[] {-0.043311281196215405, 0.022033319678982356, 0.009495184063356803}), new DoubleVector(new double[] {-0.2781951518580342, 0.9470201706879743, 0.16050001181559298}), 0.002770773121692749, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05232303078958066, 0.018586081064895902, 0.013832376982884538}), new DoubleVector(new double[] {-0.04540261661255797, 0.024315220041854428, 0.008895022476697803}), new DoubleVector(new double[] {-0.4851764391122706, 0.8280891592890159, 0.2808418900348521}), 0.0026761706640592727, 0);
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052417361208988544, 0.018570596646853944, 0.013866240215971324}), new DoubleVector(new double[] {-0.04393283029809987, 0.023056162234666597, 0.009168657192016072}), new DoubleVector(new double[] {-0.3657925383605608, 0.9076171699338433, 0.20597789134035407}), 0.0027894134371463045, 0);
+
+    partDisplayer_3.getParts().setObjects(partSurface_27);
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    partDisplayer_3.getParts().setObjects(partSurface_27);
+
+    partSurface_27.setPresentationName("outlet");
+
+    partDisplayer_3.getParts().setObjects(partSurface_29);
+
+    partDisplayer_3.getParts().setObjects(partSurface_30);
+
+    partSurface_30.setPresentationName("inlet");
+
+    partDisplayer_3.getParts().setObjects(partSurface_1);
+
+    partSurface_1.setPresentationName("wall");
+
+    partDisplayer_3.getParts().setObjects(partSurface_29);
+
+    partDisplayer_3.getParts().setObjects(partSurface_29, partSurface_32);
+
+    partDisplayer_3.getParts().setObjects(partSurface_29, partSurface_31, partSurface_32);
+
+    partDisplayer_3.getParts().setObjects(partSurface_28, partSurface_29, partSurface_31, partSurface_32);
+
+    cadPart_1.combinePartSurfaces(new NeoObjectVector(new Object[] {partSurface_29, partSurface_32, partSurface_31, partSurface_28}));
+
+    partDisplayer_3.getParts().setObjects(partSurface_29);
+
+    partDisplayer_3.getParts().setObjects(partSurface_29);
+
+    partSurface_29.setPresentationName("symmetry");
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05262832884273818, 0.018529249819965853, 0.013931808529821703}), new DoubleVector(new double[] {-0.042669085474280326, 0.022102534714892996, 0.00965285208823752}), new DoubleVector(new double[] {-0.27173641857280206, 0.9489764248217282, 0.16000957456914264}), 0.0029794799837940746, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05312992473835455, 0.01835587799026737, 0.014134911504391055}), new DoubleVector(new double[] {-0.04249194820963806, 0.02204176351447427, 0.009810578831207803}), new DoubleVector(new double[] {-0.2655639739934773, 0.9511528538385594, 0.15742942657443632}), 0.0031483842899563664, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05203057976317535, 0.018725269472741644, 0.013688467789620577}), new DoubleVector(new double[] {-0.042905307219632406, 0.022923396214904898, 0.009939486989683582}), new DoubleVector(new double[] {-0.34490318911827583, 0.919238206379046, 0.18984970389515388}), 0.002798862936829781, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05286860159544316, 0.01833304377389421, 0.014028330578582156}), new DoubleVector(new double[] {-0.04290213328190873, 0.022997098179521107, 0.009985978319388418}), new DoubleVector(new double[] {-0.3508876675256296, 0.9164613330122527, 0.1922926672336424}), 0.0030602700819447543, 0);
+
+    partDisplayer_3.getParts().setObjects(partSurface_2, partSurface_10, partSurface_9, partSurface_8, partSurface_1, partSurface_27, partSurface_29, partSurface_30);
+
+    simulation_0.getRegionManager().newRegionsFromParts(new NeoObjectVector(new Object[] {cadPart_1, cadPart_0}), "OneRegionPerPart", null, "OneBoundaryPerPartSurface", null, "OneFeatureCurvePerPartCurve", null, false);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05286860159544316, 0.01833304377389421, 0.014028330578582156}), new DoubleVector(new double[] {-0.04290213328190873, 0.022997098179521107, 0.009985978319388418}), new DoubleVector(new double[] {-0.3508876675256296, 0.9164613330122527, 0.1922926672336424}), 0.0030602700819447543, 0);
+
+    partDisplayer_3.getParts().setObjects();
+
+    Region region_0 = 
+      simulation_0.getRegionManager().getRegion("cell.solid");
+
+    Boundary boundary_0 = 
+      region_0.getBoundaryManager().getBoundary("symmetry");
+
+    Boundary boundary_1 = 
+      region_0.getBoundaryManager().getBoundary("wall");
+
+    Boundary boundary_2 = 
+      region_0.getBoundaryManager().getBoundary("top");
+
+    Boundary boundary_3 = 
+      region_0.getBoundaryManager().getBoundary("bottom");
+
+    partDisplayer_3.getParts().setObjects(boundary_0, boundary_1, boundary_2, boundary_3);
+
+    region_0.setRegionType(SolidRegion.class);
+
+    Region region_1 = 
+      simulation_0.getRegionManager().getRegion("cell.fluid");
+
+    Boundary boundary_4 = 
+      region_1.getBoundaryManager().getBoundary("wall");
+
+    Boundary boundary_5 = 
+      region_1.getBoundaryManager().getBoundary("outlet");
+
+    Boundary boundary_6 = 
+      region_1.getBoundaryManager().getBoundary("symmetry");
+
+    Boundary boundary_7 = 
+      region_1.getBoundaryManager().getBoundary("inlet");
+
+    partDisplayer_3.getParts().setObjects(boundary_4, boundary_5, boundary_6, boundary_7);
+
+    partDisplayer_3.getParts().setObjects(boundary_0, boundary_1, boundary_2, boundary_3);
+
+    partDisplayer_3.getParts().setObjects(boundary_4, boundary_5, boundary_6, boundary_7);
+
+    partDisplayer_3.getParts().setObjects();
+
+    MeshContinuum meshContinuum_0 = 
+      simulation_0.getContinuumManager().createContinuum(MeshContinuum.class);
+
+    PhysicsContinuum physicsContinuum_0 = 
+      simulation_0.getContinuumManager().createContinuum(PhysicsContinuum.class);
+
+    meshContinuum_0.setPresentationName("Mesh fluid");
+
+    physicsContinuum_0.setPresentationName("Physics fluid");
+
+    partDisplayer_3.getParts().setObjects(boundary_0, boundary_1, boundary_2, boundary_3);
+
+    meshContinuum_0.erase(region_0);
+
+    physicsContinuum_0.erase(region_0);
+
+    partDisplayer_3.getParts().setObjects(boundary_4, boundary_5, boundary_6, boundary_7);
+
+    partDisplayer_3.getParts().setObjects(boundary_7);
+
+    partDisplayer_3.getParts().setObjects(boundary_7, boundary_5);
+
+    partDisplayer_3.getParts().setObjects();
+
+    meshContinuum_0.enable(ResurfacerMeshingModel.class);
+
+    meshContinuum_0.enable(DualMesherModel.class);
+
+    meshContinuum_0.enable(PrismMesherModel.class);
+
+    meshContinuum_0.getReferenceValues().get(BaseSize.class).setValue(5.0E-5);
+
+    NumPrismLayers numPrismLayers_0 = 
+      meshContinuum_0.getReferenceValues().get(NumPrismLayers.class);
+
+    numPrismLayers_0.setNumLayers(5);
+
+    physicsContinuum_0.enable(TwoDimensionalModel.class);
+
+    TwoDimensionalModel twoDimensionalModel_0 = 
+      physicsContinuum_0.getModelManager().getModel(TwoDimensionalModel.class);
+
+    physicsContinuum_0.disableModel(twoDimensionalModel_0);
+
+    physicsContinuum_0.enable(ThreeDimensionalModel.class);
+
+    physicsContinuum_0.enable(SteadyModel.class);
+
+    physicsContinuum_0.enable(SingleComponentGasModel.class);
+
+    physicsContinuum_0.enable(SegregatedFlowModel.class);
+
+    physicsContinuum_0.enable(ConstantDensityModel.class);
+
+    physicsContinuum_0.enable(TurbulentModel.class);
+
+    physicsContinuum_0.enable(RansTurbulenceModel.class);
+
+    physicsContinuum_0.enable(KOmegaTurbulence.class);
+
+    physicsContinuum_0.enable(SstKwTurbModel.class);
+
+    physicsContinuum_0.enable(KwAllYplusWallTreatment.class);
+
+    SingleComponentGasModel singleComponentGasModel_0 = 
+      physicsContinuum_0.getModelManager().getModel(SingleComponentGasModel.class);
+
+    Gas gas_0 = 
+      ((Gas) singleComponentGasModel_0.getMaterial());
+
+    ConstantMaterialPropertyMethod constantMaterialPropertyMethod_0 = 
+      ((ConstantMaterialPropertyMethod) gas_0.getMaterialProperties().getMaterialProperty(ConstantDensityProperty.class).getMethod());
+
+    constantMaterialPropertyMethod_0.getQuantity().setValue(91.28);
+
+    ConstantMaterialPropertyMethod constantMaterialPropertyMethod_1 = 
+      ((ConstantMaterialPropertyMethod) gas_0.getMaterialProperties().getMaterialProperty(DynamicViscosityProperty.class).getMethod());
+
+    constantMaterialPropertyMethod_1.getQuantity().setValue(3.67E-5);
+
+    partDisplayer_3.getParts().setObjects(boundary_7);
+
+    partDisplayer_3.getParts().setObjects(boundary_7, boundary_5);
+
+    DirectBoundaryInterface directBoundaryInterface_0 = 
+      simulation_0.getInterfaceManager().createDirectInterface(boundary_7, boundary_5, "Periodic");
+
+    directBoundaryInterface_0.getTopology().setSelected(InterfaceConfigurationOption.PERIODIC);
+
+    partDisplayer_3.getParts().setObjects(boundary_7, boundary_5);
+
+    directBoundaryInterface_0.setInterfaceType(FullyDevelopedInterface.class);
+
+    partDisplayer_3.getParts().setObjects();
+
+    InterfacePeriodicTransformSpecification interfacePeriodicTransformSpecification_0 = 
+      directBoundaryInterface_0.getPeriodicTransform();
+
+    interfacePeriodicTransformSpecification_0.getPeriodicityOption().setSelected(PeriodicityOption.TRANSLATION);
+
+    directBoundaryInterface_0.getConditions().get(FullyDevelopedFlowOption.class).setSelected(FullyDevelopedFlowOption.MASS_FLOW_RATE);
+
+    FullyDevelopedMassFlowRate fullyDevelopedMassFlowRate_0 = 
+      directBoundaryInterface_0.getValues().get(FullyDevelopedMassFlowRate.class);
+
+    fullyDevelopedMassFlowRate_0.getFullyDevelopedMassFlowRate().setValue(3.0E-5);
+
+    MeshContinuum meshContinuum_1 = 
+      simulation_0.getContinuumManager().createContinuum(MeshContinuum.class);
+
+    PhysicsContinuum physicsContinuum_1 = 
+      simulation_0.getContinuumManager().createContinuum(PhysicsContinuum.class);
+
+    DirectBoundaryInterfaceBoundary directBoundaryInterfaceBoundary_0 = 
+      ((DirectBoundaryInterfaceBoundary) region_1.getBoundaryManager().getBoundary("inlet [Periodic 1]"));
+
+    DirectBoundaryInterfaceBoundary directBoundaryInterfaceBoundary_1 = 
+      ((DirectBoundaryInterfaceBoundary) region_1.getBoundaryManager().getBoundary("outlet [Periodic 1]"));
+
+    partDisplayer_3.getParts().setObjects(boundary_4, boundary_5, boundary_6, boundary_7, directBoundaryInterfaceBoundary_0, directBoundaryInterfaceBoundary_1);
+
+    partDisplayer_3.getParts().setObjects(boundary_0, boundary_1, boundary_2, boundary_3);
+
+    partDisplayer_3.getParts().setObjects();
+
+    physicsContinuum_1.setPresentationName("Physics solid");
+
+    meshContinuum_1.setPresentationName("Mesh solid");
+
+    meshContinuum_1.enable(ResurfacerMeshingModel.class);
+
+    meshContinuum_1.enable(DualMesherModel.class);
+
+    physicsContinuum_1.enable(ThreeDimensionalModel.class);
+
+    physicsContinuum_1.enable(SteadyModel.class);
+
+    physicsContinuum_1.enable(SolidModel.class);
+
+    physicsContinuum_1.enable(CoupledSolidEnergyModel.class);
+
+    physicsContinuum_1.enable(ConstantDensityModel.class);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0528087902400124, 0.01835974514416336, 0.014004304880857993}), new DoubleVector(new double[] {-0.042279858516299076, 0.02178647901350798, 0.01000567558511241}), new DoubleVector(new double[] {-0.2525379470113035, 0.9553007691106706, 0.1537043455985472}), 0.0030732191081788963, 0);
+
+    SegregatedFlowModel segregatedFlowModel_0 = 
+      physicsContinuum_0.getModelManager().getModel(SegregatedFlowModel.class);
+
+    physicsContinuum_0.disableModel(segregatedFlowModel_0);
+
+    physicsContinuum_0.enable(CoupledFlowModel.class);
+
+    CoupledFlowModel coupledFlowModel_0 = 
+      physicsContinuum_0.getModelManager().getModel(CoupledFlowModel.class);
+
+    physicsContinuum_0.disableModel(coupledFlowModel_0);
+
+    physicsContinuum_0.enable(SegregatedFlowModel.class);
+
+    ResidualMonitor residualMonitor_0 = 
+      ((ResidualMonitor) simulation_0.getMonitorManager().getMonitor("Continuity"));
+
+    MonitorIterationStoppingCriterion monitorIterationStoppingCriterion_0 = 
+      residualMonitor_0.createIterationStoppingCriterion();
+
+    ResidualMonitor residualMonitor_1 = 
+      ((ResidualMonitor) simulation_0.getMonitorManager().getMonitor("Y-momentum"));
+
+    MonitorIterationStoppingCriterion monitorIterationStoppingCriterion_1 = 
+      residualMonitor_1.createIterationStoppingCriterion();
+
+    ResidualMonitor residualMonitor_2 = 
+      ((ResidualMonitor) simulation_0.getMonitorManager().getMonitor("X-momentum"));
+
+    MonitorIterationStoppingCriterion monitorIterationStoppingCriterion_2 = 
+      residualMonitor_2.createIterationStoppingCriterion();
+
+    ResidualMonitor residualMonitor_3 = 
+      ((ResidualMonitor) simulation_0.getMonitorManager().getMonitor("Z-momentum"));
+
+    MonitorIterationStoppingCriterion monitorIterationStoppingCriterion_3 = 
+      residualMonitor_3.createIterationStoppingCriterion();
+
+    monitorIterationStoppingCriterion_0.getLogicalOption().setSelected(SolverStoppingCriterionLogicalOption.AND);
+
+    monitorIterationStoppingCriterion_2.getLogicalOption().setSelected(SolverStoppingCriterionLogicalOption.AND);
+
+    monitorIterationStoppingCriterion_1.getLogicalOption().setSelected(SolverStoppingCriterionLogicalOption.AND);
+
+    monitorIterationStoppingCriterion_3.getLogicalOption().setSelected(SolverStoppingCriterionLogicalOption.AND);
+
+    StepStoppingCriterion stepStoppingCriterion_0 = 
+      ((StepStoppingCriterion) simulation_0.getSolverStoppingCriterionManager().getSolverStoppingCriterion("Maximum Steps"));
+
+    stepStoppingCriterion_0.setIsUsed(false);
+
+    AreaAverageReport areaAverageReport_0 = 
+      simulation_0.getReportManager().createReport(AreaAverageReport.class);
+
+    PrimitiveFieldFunction primitiveFieldFunction_0 = 
+      ((PrimitiveFieldFunction) simulation_0.getFieldFunctionManager().getFunction("StaticPressure"));
+
+    areaAverageReport_0.setScalar(primitiveFieldFunction_0);
+
+    areaAverageReport_0.getParts().setObjects(directBoundaryInterfaceBoundary_0);
+
+    MeshPipelineController meshPipelineController_0 = 
+      simulation_0.get(MeshPipelineController.class);
+
+    meshPipelineController_0.generateVolumeMesh();
+
+    partDisplayer_2.setMesh(true);
+
+    FvRepresentation fvRepresentation_0 = 
+      ((FvRepresentation) simulation_0.getRepresentationManager().getObject("Volume Mesh"));
+
+    partDisplayer_2.setRepresentation(fvRepresentation_0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0528087902400124, 0.01835974514416336, 0.014004304880857993}), new DoubleVector(new double[] {-0.042279858516299076, 0.02178647901350798, 0.01000567558511241}), new DoubleVector(new double[] {-0.2525379470113035, 0.9553007691106706, 0.1537043455985472}), 0.0030732191081788963, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0546273810936987, 0.01751742774190276, 0.015751458574205297}), new DoubleVector(new double[] {-0.048768398965135185, 0.021289546979666295, 0.005657661503739099}), new DoubleVector(new double[] {-0.2881864470984688, 0.9397474750046908, 0.18391099730866883}), 0.0032019252956886585, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05411827774835387, 0.017834470177722446, 0.014975432140228907}), new DoubleVector(new double[] {-0.044494989043759155, 0.02301388725065574, 0.007969282695980223}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.003388859919241725, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052293163990834675, 0.018749980258452745, 0.013824905824816786}), new DoubleVector(new double[] {-0.04518536982874092, 0.022575515536893135, 0.008650139729021428}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.002503023601343183, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05221194063530123, 0.018733578677487078, 0.013926180204181956}), new DoubleVector(new double[] {-0.04580671253522451, 0.02218098099450679, 0.00926291105875851}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.0022556135899348935, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05212335546984531, 0.018726575530917826, 0.014005176036614645}), new DoubleVector(new double[] {-0.04636615808826868, 0.021825196732643548, 0.009813699871496117}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.0020274083062968994, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05206079716283776, 0.018708798103015185, 0.014089019165402264}), new DoubleVector(new double[] {-0.046869900148568684, 0.021502626849596057, 0.010309832927925136}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.001827984525515581, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052018235409742396, 0.018682672339146934, 0.01417214065067493}), new DoubleVector(new double[] {-0.047325857153926655, 0.02120818984120722, 0.010755896545529107}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.0016524301707235406, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051997287053473625, 0.018645469144017053, 0.014255204533178932}), new DoubleVector(new double[] {-0.04774069515172598, 0.020936439044763666, 0.011156230793298944}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.001498967154701925, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05201752357478076, 0.018581736847273968, 0.014348539517154929}), new DoubleVector(new double[] {-0.04812282538613416, 0.020677929418381924, 0.011513039264847796}), new DoubleVector(new double[] {-0.32756322937892063, 0.9169247474977861, 0.2279283619582559}), 0.001371525576567814, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05197521586729287, 0.01859150886946653, 0.014327138245320734}), new DoubleVector(new double[] {-0.04726911531460803, 0.019590681279224965, 0.012010075543071772}), new DoubleVector(new double[] {-0.1489279408418578, 0.9814488483365374, 0.12074198331768612}), 0.0013939930281334158, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051690809942252586, 0.01819522999421468, 0.01461935260672673}), new DoubleVector(new double[] {-0.04702851376175687, 0.019185102109678897, 0.012323857118322557}), new DoubleVector(new double[] {-0.1489279408418578, 0.9814488483365374, 0.12074198331768612}), 0.0013810177445095762, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05168759661939202, 0.018188992986381165, 0.014605243759015703}), new DoubleVector(new double[] {-0.048342681215417176, 0.017540202774316522, 0.010498065095025684}), new DoubleVector(new double[] {0.09837218287504933, 0.9921959102997753, -0.07661716009353639}), 0.0013931078137266436, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05108591070569575, 0.018089384698463613, 0.013687642737383852}), new DoubleVector(new double[] {-0.05122523745915774, 0.01857094440508033, 0.00910512325840921}), new DoubleVector(new double[] {0.03751204545356751, 0.9939416894344202, 0.10330907244835696}), 0.0012034145839483045, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05108656837806756, 0.01809325070923214, 0.013629511836324501}), new DoubleVector(new double[] {-0.05137131146986836, 0.01886588166931906, 0.009111921341960996}), new DoubleVector(new double[] {0.04043368984245827, 0.9853023579044428, 0.16596499701343445}), 0.0011987581519446, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051871131674775146, 0.018177795620027193, 0.013695464192087725}), new DoubleVector(new double[] {-0.05215599933258845, 0.01895076458149363, 0.009175897396102788}), new DoubleVector(new double[] {0.04043368984245827, 0.9853023579044428, 0.16596499701343445}), 0.0011992825703668426, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05187262968996502, 0.018183411840175318, 0.013673843086221313}), new DoubleVector(new double[] {-0.05212197409292878, 0.01843885353751172, 0.00913546428542288}), new DoubleVector(new double[] {0.03385065039569474, 0.9979501985471478, 0.05430961873827528}), 0.0011884137128952066, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.0517889385095775, 0.018187793291910878, 0.013518466620941314}), new DoubleVector(new double[] {-0.047833618290510214, 0.01812214933694038, 0.011255135874864323}), new DoubleVector(new double[] {0.04057616173394195, 0.9982951931986602, 0.041955718744774204}), 0.0011897670625231247, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05217071482912418, 0.01808226994157168, 0.014006451655142305}), new DoubleVector(new double[] {-0.047718856301178204, 0.01800838525346609, 0.011458989572322309}), new DoubleVector(new double[] {0.04057616173394195, 0.9982951931986602, 0.041955718744774204}), 0.0013391266320307766, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05153755114112521, 0.01807949531691418, 0.01374228133665223}), new DoubleVector(new double[] {-0.046383742784108825, 0.01822315683597816, 0.013701708469907717}), new DoubleVector(new double[] {-0.0273389348370591, 0.9978056822419992, 0.060302596358313795}), 0.0013459782304389358, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05253147998047765, 0.017952392512375175, 0.014313072497386583}), new DoubleVector(new double[] {-0.04922847172223967, 0.01876868276664356, 0.010185231072232638}), new DoubleVector(new double[] {-0.11561495625345442, 0.9879541882930352, 0.10285768675583755}), 0.0013964538074847305, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05173885408522266, 0.01815333239450807, 0.01333436770676682}), new DoubleVector(new double[] {-0.04864706393760225, 0.01949011177169259, 0.010814069801523038}), new DoubleVector(new double[] {-0.2308111623898576, 0.9478896020021188, 0.21961673372607068}), 0.0010982224967328118, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05204385361863206, 0.018661465462030357, 0.01452728219041928}), new DoubleVector(new double[] {-0.048380764670281066, 0.02024525398878949, 0.011541285417528305}), new DoubleVector(new double[] {-0.2308111623898576, 0.9478896020021188, 0.21961673372607068}), 0.0013011512743543098, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05186491201653643, 0.018743085097478986, 0.014383932378254674}), new DoubleVector(new double[] {-0.04860277013684808, 0.021802080170511707, 0.01270028862134775}), new DoubleVector(new double[] {-0.5059073964304065, 0.7619986164062413, 0.4042472199434172}), 0.0012474282903238954, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051943970074982915, 0.01816112098726845, 0.014313737480644483}), new DoubleVector(new double[] {-0.04840753513353299, 0.021477327780527106, 0.01248852667422533}), new DoubleVector(new double[] {-0.5059073964304065, 0.7619986164062413, 0.4042472199434172}), 0.0013523167156898796, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.051960226531656946, 0.01814397198777568, 0.014321664448807692}), new DoubleVector(new double[] {-0.047902407959559724, 0.02029772116140384, 0.011825768903866236}), new DoubleVector(new double[] {-0.3038389286126646, 0.9077322058866608, 0.2893166912842133}), 0.0013648327381177996, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05190706142385746, 0.018359140716130228, 0.014364604548184202}), new DoubleVector(new double[] {-0.047934154995594266, 0.02046782147273475, 0.011920937026191845}), new DoubleVector(new double[] {-0.3038389286126646, 0.9077322058866608, 0.2893166912842133}), 0.0013362728427677834, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05191101644107952, 0.018356337503415858, 0.014366910940493652}), new DoubleVector(new double[] {-0.04810165787919073, 0.02094047930998408, 0.012124685185335857}), new DoubleVector(new double[] {-0.38415853639751407, 0.8592990989946871, 0.3376792522199706}), 0.0013366437283974237, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05191101644107952, 0.018356337503415858, 0.014366910940493652}), new DoubleVector(new double[] {-0.04810165787919073, 0.02094047930998408, 0.012124685185335857}), new DoubleVector(new double[] {-0.38415853639751407, 0.8592990989946871, 0.3376792522199706}), 0.0013366437283974237, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05220535153069423, 0.018147335048308854, 0.014563915298769986}), new DoubleVector(new double[] {-0.04834261186789828, 0.020908484895227456, 0.011931982340095307}), new DoubleVector(new double[] {-0.38415853709013176, 0.8592990983262823, 0.33767925313292196}), 0.0014171989687845896, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.052520971561319824, 0.017994929445401153, 0.01475221970335364}), new DoubleVector(new double[] {-0.04784521234872452, 0.020422701551380925, 0.011900480909657193}), new DoubleVector(new double[] {-0.3000225395201129, 0.910832433586779, 0.283497361021735}), 0.0015639024088239827, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.05298393365286432, 0.017750093639846937, 0.015034159863940856}), new DoubleVector(new double[] {-0.047859816915496615, 0.020460062530837726, 0.011913623597637259}), new DoubleVector(new double[] {-0.3055059663849006, 0.9079589050407502, 0.28683920802503615}), 0.0017185546657878647, 0);
+
+    simulation_0.getSimulationIterator().run();
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053039330074131544, 0.01773969645861969, 0.015069676808285875}), new DoubleVector(new double[] {-0.04753206726387027, 0.01963610731020379, 0.01162004581694197}), new DoubleVector(new double[] {-0.1932352279214559, 0.9567481648495975, 0.21746975823564707}), 0.0017671968449095958, 0);
+
+    currentView_0.setInput(new DoubleVector(new double[] {-0.053039330074131544, 0.01773969645861969, 0.015069676808285875}), new DoubleVector(new double[] {-0.04753206726387027, 0.01963610731020379, 0.01162004581694197}), new DoubleVector(new double[] {-0.1932352279214559, 0.9567481648495975, 0.21746975823564707}), 0.0017671968449095958, 0);
+
+    AreaAverageReport areaAverageReport_1 = 
+      simulation_0.getReportManager().createReport(AreaAverageReport.class);
+
+    areaAverageReport_1.setScalar(primitiveFieldFunction_0);
+
+    areaAverageReport_1.getParts().setObjects(directBoundaryInterfaceBoundary_1);
+
+    areaAverageReport_0.setPresentationName("P1");
+
+    areaAverageReport_1.setPresentationName("P2");
+
+    areaAverageReport_0.setPresentationName("P0");
+
+    areaAverageReport_1.setPresentationName("P1");
+
+    ExpressionReport expressionReport_0 = 
+      simulation_0.getReportManager().createReport(ExpressionReport.class);
+
+    expressionReport_0.setDefinition("$P0Report - $P1Report\n");
+
+    expressionReport_0.printReport();
+
+    ReportMonitor reportMonitor_0 = 
+      expressionReport_0.createMonitor();
+
+    MonitorPlot monitorPlot_0 = 
+      simulation_0.getPlotManager().createMonitorPlot();
+
+    monitorPlot_0.setPresentationName("Expression 1 Monitor Plot");
+
+    monitorPlot_0.getMonitors().addObjects(reportMonitor_0);
+
+    Axes axes_0 = 
+      monitorPlot_0.getAxes();
+
+    Axis axis_0 = 
+      axes_0.getXAxis();
+
+    AxisTitle axisTitle_0 = 
+      axis_0.getTitle();
+
+    axisTitle_0.setText("Iteration");
+
+    Axis axis_1 = 
+      axes_0.getYAxis();
+
+    AxisTitle axisTitle_1 = 
+      axis_1.getTitle();
+
+    axisTitle_1.setText("Expression");
+
+    Units units_0 = 
+      simulation_0.getUnitsManager().getPreferredUnits(new IntVector(new int[] {0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}));
+
+    scene_0.getCreatorGroup().setObjects(region_1, region_0);
+
+    partDisplayer_1.setRepresentation(fvRepresentation_0);
+
+    partDisplayer_1.getParts().setObjects(region_1, region_0);
+
+    PartDisplayer partDisplayer_4 = 
+      scene_0.getDisplayerManager().createPartDisplayer("Section Geometry", -1, 1);
+
+    partDisplayer_4.initialize();
+
+    PlaneSection planeSection_0 = 
+      (PlaneSection) simulation_0.getPartManager().createImplicitPart(new NeoObjectVector(new Object[] {region_1, region_0}), new DoubleVector(new double[] {0.0, 1.0, 0.0}), new DoubleVector(new double[] {0.0, 0.0182, 0.0}), 0, 1, new DoubleVector(new double[] {0.0}));
+
+    LabCoordinateSystem labCoordinateSystem_0 = 
+      simulation_0.getCoordinateSystemManager().getLabCoordinateSystem();
+
+    planeSection_0.setCoordinateSystem(labCoordinateSystem_0);
+
+    Coordinate coordinate_0 = 
+      planeSection_0.getOriginCoordinate();
+
+    coordinate_0.setCoordinate(units_0, units_0, units_0, new DoubleVector(new double[] {0.0, 0.0182, 0.0}));
+
+    Coordinate coordinate_1 = 
+      planeSection_0.getOrientationCoordinate();
+
+    coordinate_1.setCoordinate(units_0, units_0, units_0, new DoubleVector(new double[] {0.0, 1.0, 0.0}));
+
+    coordinate_1.setValue(new DoubleVector(new double[] {0.0, 1.0, 0.0}));
+
+    coordinate_0.setValue(new DoubleVector(new double[] {0.0, 0.0182, 0.0}));
+
+    SingleValue singleValue_0 = 
+      planeSection_0.getSingleValue();
+
+    singleValue_0.getValueQuantity().setValue(0.0);
+
+    singleValue_0.getValueQuantity().setUnits(units_0);
+
+    RangeMultiValue rangeMultiValue_0 = 
+      planeSection_0.getRangeMultiValue();
+
+    rangeMultiValue_0.setNValues(2);
+
+    rangeMultiValue_0.getStartQuantity().setValue(0.0);
+
+    rangeMultiValue_0.getStartQuantity().setUnits(units_0);
+
+    rangeMultiValue_0.getEndQuantity().setValue(1.0);
+
+    rangeMultiValue_0.getEndQuantity().setUnits(units_0);
+
+    DeltaMultiValue deltaMultiValue_0 = 
+      planeSection_0.getDeltaMultiValue();
+
+    deltaMultiValue_0.setNValues(2);
+
+    deltaMultiValue_0.getStartQuantity().setValue(0.0);
+
+    deltaMultiValue_0.getStartQuantity().setUnits(units_0);
+
+    deltaMultiValue_0.getDeltaQuantity().setValue(1.0);
+
+    deltaMultiValue_0.getDeltaQuantity().setUnits(units_0);
+
+    MultiValue multiValue_0 = 
+      planeSection_0.getArbitraryMultiValue();
+
+    multiValue_0.getValueQuantities().setUnits(units_0);
+
+    multiValue_0.getValueQuantities().setArray(new DoubleVector(new double[] {0.0}));
+
+    planeSection_0.setValueMode(0);
+
+    partDisplayer_4.getParts().addParts(planeSection_0);
+
+    partDisplayer_1.getParts().setObjects();
+
+    simulation_0.getSceneManager().createScalarScene("Scalar Scene", "Outline", "Scalar");
+
+    simulation_0.getSceneManager().createScalarScene("Scalar Scene", "Outline", "Scalar");
+
+    Scene scene_1 = 
+      simulation_0.getSceneManager().getScene("Scalar Scene 1");
+
+    scene_1.initializeAndWait();
+
+    logoAnnotation_0.setOpacity(0.20000000298023224);
+
+    PartDisplayer partDisplayer_6 = 
+      ((PartDisplayer) scene_1.getCreatorDisplayer());
+
+    partDisplayer_6.initialize();
+
+    PartDisplayer partDisplayer_5 = 
+      ((PartDisplayer) scene_1.getDisplayerManager().getDisplayer("Outline 1"));
+
+    partDisplayer_5.initialize();
+
+    ScalarDisplayer scalarDisplayer_0 = 
+      ((ScalarDisplayer) scene_1.getDisplayerManager().getDisplayer("Scalar 1"));
+
+    scalarDisplayer_0.initialize();
+
+    PartDisplayer partDisplayer_7 = 
+      ((PartDisplayer) scene_1.getHighlightDisplayer());
+
+    partDisplayer_7.initialize();
+
+    scene_1.open(true);
+
+    Scene scene_2 = 
+      simulation_0.getSceneManager().getScene("Scalar Scene 2");
+
+    scene_2.initializeAndWait();
+
+    logoAnnotation_0.setOpacity(0.20000000298023224);
+
+    PartDisplayer partDisplayer_9 = 
+      ((PartDisplayer) scene_2.getCreatorDisplayer());
+
+    partDisplayer_9.initialize();
+
+    PartDisplayer partDisplayer_8 = 
+      ((PartDisplayer) scene_2.getDisplayerManager().getDisplayer("Outline 1"));
+
+    partDisplayer_8.initialize();
+
+    ScalarDisplayer scalarDisplayer_1 = 
+      ((ScalarDisplayer) scene_2.getDisplayerManager().getDisplayer("Scalar 1"));
+
+    scalarDisplayer_1.initialize();
+
+    PartDisplayer partDisplayer_10 = 
+      ((PartDisplayer) scene_2.getHighlightDisplayer());
+
+    partDisplayer_10.initialize();
+
+    scene_2.open(true);
+
+    CurrentView currentView_1 = 
+      scene_1.getCurrentView();
+
+    currentView_1.setInput(new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.014879831421012573}), new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.020652804113793236}), new DoubleVector(new double[] {0.0, 1.0, 0.0}), 0.001507048286757995, 0);
+
+    CurrentView currentView_2 = 
+      scene_2.getCurrentView();
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.014879831421012573}), new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.020652804113793236}), new DoubleVector(new double[] {0.0, 1.0, 0.0}), 0.001507048286757995, 0);
+
+    PrimitiveFieldFunction primitiveFieldFunction_1 = 
+      ((PrimitiveFieldFunction) simulation_0.getFieldFunctionManager().getFunction("BoundaryIndex"));
+
+    scalarDisplayer_1.getScalarDisplayQuantity().setFieldFunction(primitiveFieldFunction_1);
+
+    PrimitiveFieldFunction primitiveFieldFunction_2 = 
+      ((PrimitiveFieldFunction) simulation_0.getFieldFunctionManager().getFunction("Velocity"));
+
+    VectorMagnitudeFieldFunction vectorMagnitudeFieldFunction_0 = 
+      ((VectorMagnitudeFieldFunction) primitiveFieldFunction_2.getMagnitudeFunction());
+
+    scalarDisplayer_1.getScalarDisplayQuantity().setFieldFunction(vectorMagnitudeFieldFunction_0);
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.014879831421012573}), new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.020652804113793236}), new DoubleVector(new double[] {0.0, 1.0, 0.0}), 0.001507048286757995, 0);
+
+    simulation_0.saveState(resolvePath("Z:\\Windows.Documents\\My Documents\\SYNC\\sim_unit_cell_assem_test_2.sim"));
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.014879831421012573}), new DoubleVector(new double[] {-0.051691025467334846, 0.018247111445475642, 0.020652804113793236}), new DoubleVector(new double[] {0.0, 1.0, 0.0}), 0.001507048286757995, 0);
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.05153900969916541, 0.018155270230732247, 0.014278856729342483}), new DoubleVector(new double[] {-0.05392691780625084, 0.019597938868935023, 0.019449376150788743}), new DoubleVector(new double[] {0.05308483692795674, 0.9679284855339149, -0.24555334854233635}), 0.0015337281702548604, 0);
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.051491611175770745, 0.018118306753526124, 0.014173977018753116}), new DoubleVector(new double[] {-0.05383921238123196, 0.019957154951153872, 0.019370746059206252}), new DoubleVector(new double[] {0.07836922635003643, 0.9504296345316415, -0.30090160213157185}), 0.0015641156285534053, 0);
+
+    scalarDisplayer_1.getParts().setObjects(planeSection_0);
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.05139652351831488, 0.01795450678576009, 0.013988005424232277}), new DoubleVector(new double[] {-0.053564021704117955, 0.022007521426389596, 0.01813954416098327}), new DoubleVector(new double[] {0.23018943742142273, 0.7536800046501557, -0.6156129250512452}), 0.0016168449648825216, 0);
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.05144875547768685, 0.017841038039961857, 0.013739698318993965}), new DoubleVector(new double[] {-0.05391083934776069, 0.02244489978122082, 0.01845547461199889}), new DoubleVector(new double[] {0.23018943742142273, 0.7536800046501557, -0.6156129250512452}), 0.0018365911143646148, 0);
+
+    currentView_2.setInput(new DoubleVector(new double[] {-0.051591067713237695, 0.01787489705692987, 0.01362909233740744}), new DoubleVector(new double[] {-0.0542923387557677, 0.022926015971535173, 0.01880299810811607}), new DoubleVector(new double[] {0.23018943742142273, 0.7536800046501557, -0.6156129250512452}), 0.002015012751800471, 0);

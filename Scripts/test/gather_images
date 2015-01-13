@@ -1,0 +1,15 @@
+#!/bin/sh
+here=$PWD
+echo $here
+for file in `find .`
+do
+	match=`echo $file | grep -o -P '(?<=/)\w+.png'`;
+	if [ "$match" == "" ]; then
+	echo "no match";	
+	else	
+	tar="$here/$match";
+	echo "$tar";
+	echo "$file";
+	mv $file $tar;
+	fi 
+done

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+clear
+
+
+
+
+CLASSPATH="/usr/local/apps64/starccm+7.04.006/STAR-CCM+7.04.006/star/lib/java/platform/modules/ext/*"
+
+
+javac sunshot/pinCircStag/pinCircStag.java
+javac -classpath "$CLASSPATH" MyStar/cadimport/MyCadImporter.java
+#javac -classpath "$CLASSPATH" MyStar/csvread/CsvFieldReader.java
+javac -classpath "$CLASSPATH" MyStar/properties/Properties.java
+javac -classpath "$CLASSPATH" MyStar/report/ReportCreator.java
+javac test/test1.java
+
